@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/activity-detail.css" />
+    <title>Activity-detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <style>
+      section.activity-detail-section div.activity-detail-section-image {
+        background-image: url(/images/B0001/B0001_1.jpeg);
+      }
+
+      section.activity-intro-section div.activity-intro-image {
+        background-image: url(/images/B0001/B0001_5.jpeg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="side-navbar none">
+      <div class="outer-box">
+        <div class="icon-arrow-up hide">
+          <svg class="icon-arrow-up svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-up"></use>
+          </svg>
+        </div>
+        <div class="side-navbar-flex flex">
+          <div class="homepage-container">
+            <div class="side-navbar-item">
+              <a href="./level_new.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/level_white.svg" alt="" />
+                  <p class="text ff-noto">難度分級</p>
+                </div>
+              </a>
+              <a href="./notebook.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/blog.svg" alt="" />
+                  <p class="text ff-noto">登山記事</p>
+                </div>
+              </a>
+              <a href="./note.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/notice.svg" alt="" />
+                  <p class="text ff-noto">登山須知</p>
+                </div>
+              </a>
+              <a href="./weather.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/weather.svg" alt="" />
+                  <p class="text ff-noto">天氣</p>
+                </div>
+              </a>
+              <a href="./product.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/product.svg" alt="" />
+                  <p class="text ff-noto">商品</p>
+                </div>
+              </a>
+
+              <a href="./achievement.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/achivement.svg" alt="" />
+                  <p class="text ff-noto">成就紀錄</p>
+                </div>
+              </a>
+              <a href="./activity-list.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/schedule.svg" alt="" />
+                  <p class="text ff-noto">行程</p>
+                </div>
+              </a>
+              <a href="./info.php">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/about_us.svg" alt="" />
+                  <p class="text ff-noto">官方資訊</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="icon-arrow-down">
+          <svg class="icon-arrow-down svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-navbar">
+      <div class="homepage-container flex">
+        <div class="navbar-left">
+          <a href="./nomadHomePage.html">
+            <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right flex">
+          <a href="./shopping-cart-1.html">
+            <div class="cart none">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">0</span>
+            </div>
+          </a>
+          <div class="user-icon flex none">
+            <div class="left-box">
+              <div class="user-account">
+                <img src="/images/User-icon/Ellipse -1.png" alt="" />
+              </div>
+
+              <!-- 新增dropdown選單 -->
+              <div class="dropDown-box">
+                <ul>
+                  <a href="./member.html">
+                    <li>
+                      <svg class="icon-profile svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-profile"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">帳號資訊</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_02">
+                    <li>
+                      <svg class="icon-heart svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-heart"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">我的最愛</span>
+                    </li>
+                  </a>
+                  <a href="./achievement.html">
+                    <li>
+                      <svg class="icon-trophy svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-trophy"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">成就紀錄</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_04">
+                    <li>
+                      <svg class="icon-history svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-history"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">購買紀錄</span>
+                    </li>
+                  </a>
+                  <a href="logout.html">
+                    <li class="logout">
+                      <p class="text ff-noto">登出</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger" id="mobile-cta">
+            <input type="checkbox" name="" id="check" />
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <!-- 可能使用javascript append生成 -->
+              <a href="./info.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">官方資訊</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./activity-list.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">行程</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./product.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">商品</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./achievement.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">成就紀錄</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./notebook.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山記事</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./level_new.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">難度分級</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./weather.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">天氣</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./note.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山須知</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+
+              <a href="./member.html">
+                <div class="user-account">
+                  <img src="/images/User-icon/Ellipse -1.png" alt="" />
+                </div>
+              </a>
+              <p class="userName ff-noto">Christine, &nbsp&nbsp您好</p>
+
+              <a href="nomadHomePage.html">
+                <p class="logout ff-noto">登出</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-modal"></div>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-section-background-image">
+          <p class="title ff-noto none">南湖大山五日遊</p>
+          <div class="hero-section-image-desktop">
+            <img src="/images/B0001/B0001.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-detail-section">
+      <div class="flexBox0">
+        <div class="activity-detail-section-image">
+          <p class="text-image ff-noto">查看照片</p>
+          <p class="text-price ff-airbnb">$ 9,999 TWD</p>
+        </div>
+
+        <section id="fixed-section" class="fixed-section">
+          <div id="homepage-container" class="homepage-container flex">
+            <div class="fixed-functions">
+              <p class="text ff-noto">
+                <span class="num ff-airbnb">$ 9,999 <span>/ 人
+              </p>
+            </div>
+
+            <div id="buyNowBtn" class="fixed-functions">
+              <p class="text btn ff-noto">立即報名</p>
+            </div>
+
+            <div class="fixed-functions add-to-cart-mobile">
+              <p class="text btn ff-noto">加入購物車</p>
+            </div>
+          </div>
+
+          <section id="buy-now-section" class="buy-now-section">
+            <div class="container">
+              <div class="backward">
+                <svg id="icon-cross" class="icon-cross svg">
+                  <use xlink:href="./icomoon/symbol-defs.svg#icon-cross"></use>
+                </svg>
+              </div>
+              <div class="activity-info flex">
+                <div class="leftBox">
+                  <img src="/images/B0001/B0001.jpeg" alt="" >
+                </div>
+                <div class="rightBox">
+                  <p class="title ff-noto">南湖大山五日遊</p>
+                  <p class="text ff-noto">
+                    $<span class="num ff-airbnb"> 9,999 TWD</span>/ 人
+                  </p>
+
+                  <svg class="icon-heart svg none">
+                    <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="boxes">
+                <div class="select-box flex">
+                  <p class="text ff-noto">日期</p>
+                  <select name="date" id="date" class="ff-noto">
+                    <option value="1">2021/05/16 - 05/20</option>
+                  </select>
+                </div>
+                <div class="select-box flex">
+                  <p class="text ff-noto">人數</p>
+                  <select name="num" id="num" class="ff-noto" style="padding-right: 4rem">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+
+                <div class="select-box flex">
+                  <p class="text ff-noto">嚮導</p>
+                  <select name="guides" id="guides" class="ff-noto" style="padding-right: 3.5rem">
+                    <option value="1">紫潔</option>
+                    <option value="2">韋丞</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="notes">
+                <div class="box none">
+                  <svg class="icon-warning svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-warning"
+                    ></use>
+                  </svg>
+                  <span class="text ff-noto">
+                      報名前，請務必詳閱
+                      <a href="rule.html">
+                          <u> 報名規則</u>
+                    </a>
+                    </span>
+                </div>
+
+                <div class="box none">
+                  <svg class="icon-warning svg">
+                    <use xlink:href="./icomoon/symbol-defs.svg#icon-warning"></use>
+                  </svg>
+                  <span class="text ff-noto">
+                      費用已包含
+                      <a href="#">
+                          <u>保險</u>
+                        </a>
+                </span>
+                </div>
+              </div>
+
+              <div class="price none">
+                <p class="text ff-airbnb">
+                  TWD
+                  <span class="num ff-airbnb"
+                    >9,999</span
+                  >
+                  / 人
+                </p>
+              </div>
+
+              <div class="buy-btns flex">
+                <a href="./shopping-cart-1.html">
+                  <div class="sign-up-cta btn ff-noto">立即報名</div>
+                </a>
+
+                <div class="put-in-cart btn ff-noto none">加入購物車</div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <div class="container">
+        <div class="flexBox1">
+          <div class="floor-1 flex">
+            <p class="text ff-noto">南湖大山五日遊</p>
+            <svg class="icon-heart svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+            </svg>
+          </div>
+          <div class="floor-2">
+            <div class="floor-2-1 flex">
+              <span>
+                <svg class="icon-star svg">
+                  <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                </svg>
+              </span>
+              <span class="ff-airbnb">4.7</span>
+            </div>
+            <div class="floors flex">
+              <div class="floor-2-2">
+                <span>
+                  <svg class="icon-place svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-place"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="ff-noto">台灣-花蓮</span>
+              </div>
+
+              <div class="floor-2-3-1">
+                <span>
+                  <svg class="icon-difficulty svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-difficulty"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="ff-noto">行程難度: B</span>
+              </div>
+              <div class="floor-2-3-2">
+                <span>
+                  <svg class="icon-time svg">
+                    <use xlink:href="./icomoon/symbol-defs.svg#icon-time"></use>
+                  </svg>
+                </span>
+                <span class="ff-noto">天數: 5天</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mountain-intro-section">
+        <div class="container">
+            <h2 class="title ff-noto">南湖大山五日遊</h2>
+            <div class="mountain-intro-container">
+                <ul class="mountain-intro flex">
+                    <li class="text">
+                        <p class="title ff-noto">
+                            <svg class="icon-play svg none">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-play"></use>
+                            </svg>
+                            多加屯山：
+                        </p>
+                        <p class="text ff-noto">
+                            位於宜蘭縣大同鄉與台中市和平區交界處，隸屬於中央山脈，南湖大山往西延伸出來的支脈尾端，是登南湖大山的第一座山頭，而在其半山稜線起點的松風嶺則以大片二葉松純林聳立，地上滿是松針舖地，週遭環境盡是松香而聞名。
+                        </p>
+                    </li>
+
+                    <li class="picture none">
+                        <img src="/images/B0001/B0001_2.jpeg" alt="">
+                    </li>
+                    <li class="picture none">
+                        <img src="/images/B0001/B0001_3.jpeg" alt="">
+                    </li>
+                    <li class="text">
+                        <p class="title ff-noto">
+                            <svg class="icon-play svg none">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-play"></use>
+                            </svg>
+                            南湖大山：
+                        </p>
+                        <p class="text ff-noto">
+                            南湖大山，中央山脈北段最高峰。台灣五嶽的北嶽盟主，高度上雖不及玉山、雪山、秀姑巒山，但在山友與學者的心目中，地位幾乎一致崇高，更是此生必來朝拜的百岳殿堂。有著帝王般莊嚴神聖的尊榮的主峰，引領周遭十數個山頭，形成如天際高台般的南湖地壘。過去，大量冰河曾經來過，留下最完整且多量的的冰河圈谷遺跡。到現在，南湖大山仍舊是台灣積雪最豐厚的地方，因這裡獨特的生態與地質，成為學術研究價值最高的高山地區。
+                        </p>
+                    </li>
+                    <li class="text">
+                        <p class="title ff-noto">
+                            <svg class="icon-play svg none">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-play"></use>
+                            </svg>
+                            南湖圈谷：
+                        </p>
+                        <p class="text ff-noto">
+                            南湖山區特殊的地形是由南湖主、東峰稜脊環夾，中間形成上下兩個寬闊的大圈谷，部份地質學者認為是冰河遺跡；無論登山或學術探討，南湖山區均為一重要的區域。
+                        </p>
+                    </li>
+                    <li class="picture none">
+                        <img src="/images/B0001/B0001_4.jpeg" alt="">
+                    </li>
+                </ul>
+                <div class="mountain-intro-cta btn ff-noto">顯示更多</div>
+                <div class="mountain-intro-close btn ff-noto none">收起</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="activity-intro-section">
+        <div class="container">
+            <h2 class="title ff-noto"><span class="none">南湖大山五日</span>行程介紹</h2>
+            <div class="activity-intro-image"></div>
+            <div class="activity-daily-intro flex">
+                <div class="left">
+                    <p class="text ff-noto">
+                        第一天 | <br>
+                        06:30 台北西門町集合<br>
+                        09:00 南山村 7-11<br>
+                        10:00 聖光派出所 (張良橋 )<br>
+                        12:30 6.7 k 登山口<br>
+                        14:00 多加屯山<br>
+                        15:30 木杆鞍部<br>
+                        16:00  雲稜山莊 (宿）
+                    </p>
+                    <p class="text ff-noto none">
+                        第二天 | <br>
+                        05:00 雲稜山莊<br>
+                        09:00 審馬陣山<br>
+                        09:30 審馬陣山屋叉路<br>
+                        10:25 南湖北山叉路<br>
+                        10:30 南湖北山<br>
+                        12:30 南湖大山北峰<br>
+                        14:00 南湖圈谷山屋 (宿)
+                    </p>
+                    <p class="text ff-noto none">
+                        第三天 | <br>
+                        06:00 南湖圈谷山<br>
+                        10:00 南湖大山<br>
+                        13:00 南湖東峰<br>
+                        15:00 南湖圈谷山屋
+                    </p>
+                    <p class="text ff-noto none">
+                        第四天 | <br>
+                        06:00 南湖圈谷山屋<br>
+                        07:00 南湖大山北峰<br>
+                        08:40 南湖北山叉路<br>
+                        10:30 審馬陣山屋叉路<br>
+                        14:30 雲稜山莊 (宿)
+                    </p>
+                    <p class="text ff-noto none">
+                        第五天 |<br>
+                        06:00 雲稜山莊<br>
+                        07:00 多加屯山<br>
+                        09:00 6.7 k 登山口<br>
+                        10:00 思源啞口<br>
+                        11:00 南山村<br>
+                        14:00 慶功宴<br>
+                        18:00 台北西門町 解散
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="right-top ff-noto none">
+                        南湖大山，位於臺灣臺中市和平區平等里與花蓮縣秀林鄉和平村之間，處於中央山脈主稜線北段，在太魯閣國家公園，屬台中市和平區，海拔3,742公尺，為中央山脈第三高峰、主稜線北段的最高峰，設有一等三角點。山型端凝厚重，素有帝王之山、王者之山之稱；主山的山體，別號「帝王座」
+                    </div>
+                    <div class="right-bottom flex">
+                        <p class="text ff-noto" data-days="0">第一天</p>
+                        <p class="text ff-noto" data-days="1">第二天</p>
+                        <p class="text ff-noto" data-days="2">第三天</p>
+                        <p class="text ff-noto" data-days="3">第四天</p>
+                        <p class="text ff-noto" data-days="4">第五天</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide-intro-section">
+        <div class="container">
+            <h2 class="title ff-noto">嚮導</h2>
+            <div class="guides flex">
+                <p class="text ff-noto active">紫潔</p>
+                <p class="text ff-noto">韋丞</p>
+            </div>
+            <div class="guide-intro-cards flex">
+                <div class="card">
+                    <div class="guide-intro-image"></div>
+                    <div class="guide-intro-description">
+                        <p class="title ff-noto none">紫潔</p>
+                        <p class="text ff-noto">
+                            - 具海外高山攀登經驗<br>
+                            - 具野地救援能力<br>
+                            - 具背負25KG以上能力<br>
+                            - 具高山嚮導同等級以上能力<br>
+                            - 具野地緊急過夜能力<br>
+                            - 具戶外風險管理能力<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card none">
+                    <div class="guide-intro-image2"></div>
+                    <div class="guide-intro-description">
+                        <p class="title ff-noto none">韋丞</p>
+                        <p class="text ff-noto">
+                            - 具海外高山攀登經驗<br>
+                            - 具野地救援能力<br>
+                            - 具背負25KG以上能力<br>
+                            - 具高山嚮導同等級以上能力<br>
+                            - 具野地緊急過夜能力<br>
+                            - 具戶外風險管理能力<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-activity-section">
+        <div class="container">
+            <div class="flexBox flex">
+                <h2 class="title ff-noto">相關熱門行程</h2>
+                <div class="carousel-button flex none">
+                    <div class="pagination ff-airbnb"><span class="page">1</span>/ 3</div>
+                    <div id="prev" class="arrow-button">
+                        <svg class="icon-arrow-back svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_back_ios"></use>
+                        </svg>
+                    </div>
+                    <div id="next" class="arrow-button">
+                        <svg class="icon-arrow-forward svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel">
+                <ul class="wrap-img">
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0006/A0006.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">加里山一日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4)</span>
+
+                        <p class="date ff-airbnb">2021/07/02</p>
+                        <span class="price ff-airbnb">$ 1,800 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0007/A0007.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">忘憂森林二日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(5)</span>
+
+                        <p class="date ff-airbnb">2021/07/14 - 07/15</p>
+                        <span class="price ff-airbnb">$ 7,050 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0008/A0008.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">司馬庫斯兩日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4.9)</span>
+
+                        <p class="date ff-airbnb">2021/07/31 - 08/01</p>
+                        <span class="price ff-airbnb">$ 8,020 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0009/A0009.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">砂卡礑步道兩日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4)</span>
+
+                        <p class="date ff-airbnb">2021/07/24 - 07/25</p>
+                        <span class="price ff-airbnb">$ 6,100 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0010/A0010.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">雪山主東峰圈谷三日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4.8)</span>
+
+                        <p class="date ff-airbnb">2021/08/01 - 08/03</p>
+                        <span class="price ff-airbnb">$ 5,300 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0011/A0011.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">畢祿山兩日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4)</span>
+
+                        <p class="date ff-airbnb">2021/08/10 - 08/11</p>
+                        <span class="price ff-airbnb">$ 5,750 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0012/A0012.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">雪見森林兩日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4.4)</span>
+
+                        <p class="date ff-airbnb">2021/08/16 - 08/17</p>
+                        <span class="price ff-airbnb">$ 5,350 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0013/A0013.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">奇萊南華三日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4.9)</span>
+
+                        <p class="date ff-airbnb">2021/08/31 - 09/02</p>
+                        <span class="price ff-airbnb">$ 6,800 TWD / 人
+                        </span>   
+                    </li>
+
+                    <li class="carousel-cell">
+                        <svg class="icon-heart svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                        <div class="carousel-image">
+                            <img src="/images/A0014/A0014.jpeg" alt="">
+                        </div>
+                        <p class="title ff-noto">嘉明湖三日遊</p>
+                        <svg class="icon-star svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <span class="num ff-airbnb">(4.8)</span>
+
+                        <p class="date ff-airbnb">2021/09/15 - 09/17</p>
+                        <span class="price ff-airbnb">$ 7,000 TWD / 人
+                        </span>   
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="comment-section">
+        <div class="container">
+            <h2 class="title ff-noto">評論</h2>
+            <div class="comment-flexBox">
+                <div class="comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b4e9d4ad6a8455.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-noto">申敏兒</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/05/29</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            天氣大部分都很好，只有回程到小奇萊時，下了一點點雨。山一直都在，沒有每次都遇的到好天氣的，但還是希望，每次出門都能像這次一樣，陽光普照。八月，我們南湖大山見。
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+
+                <div class=" comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b246e74dcae495.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-airbnb">Jason</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/05/29</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            我是從大坪林道支線走到杜鵑嶺再爬上加里山，這段路比鹿場那邊過來會比較辛苦點，昨天假日還好很早就去，10點30分左右登上加里山山頂，這時小小的山頂已經擠滿人了，休息一會就往山下裡開，這時上來的人還是很多，建議平日去比較好點。
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+
+                <div class=" comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b2f7fb92fd5565.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-noto">迪麗熱巴</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/05/30</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            司馬庫斯風景優美，加上當天是個非常適合走巨木登山步道的天氣，途中遇到的登山客都非常和善，就算不認識也會互相加油打氣，來回路途中司機開車很穩，對於第一次參加這種行程的我來說是個非常好的體驗。
+                            建議一定要穿防滑的鞋子，還有攜帶補充熱量的食物及足夠的水！
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+
+                <div class=" comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b3aca475fbf593.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-airbnb">Jessica</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/05/30</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            這邊朔溪真的很棒，中階難度
+                            回程的時候會需要一直跳水，一個比一個還高哈哈哈！
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+
+                <div class=" comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b4c9a1018d6298.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-noto">宋仲基</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/05/31</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            很艱難的行程，需要體力很好的人參加而且挑戰性很高，不過我很喜歡，景色相當優美壯闊。
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+
+                <div class=" comment-card">
+                    <div class="topBox flex">
+                        <div class="user-icon">
+                            <img src="/images/60b661fbd3dba380.jpg" alt="" />
+                        </div>
+                        <div class="rank">
+                            <p class="text ff-noto">金秀賢</p>
+                            <svg class="icon-star svg">
+                                <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+                            </svg>
+                            <span class="num ff-airbnb">(5)</span>
+                            <span class="date ff-airbnb">2021/06/02</span>
+                        </div>
+                    </div>
+                    <div class="bottomBox">
+                        <p class="text ff-noto">
+                            嘉明湖本人固然美麗，但向陽山頂的展望亦壯麗得教人驚嘆連連，360度看盡中央山脈及海岸山脈，天氣好的話絕不可錯過。
+                        </p>
+                    </div>
+                    <div class="text ff-airbnb none">View more</div>
+                </div>
+            </div>
+            <div class="comment-section-cta btn ff-noto">顯示更多</div>
+            <div class="comment-section-close btn ff-noto none">收起</div>
+
+        </div>
+    </section>
+
+    <section class="warning-section">
+        <div class="container">
+            <svg class="icon-warning svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="text ff-noto">報名前，請務必詳閱報名規則，報名後即視為同意所述規範</span>
+            <svg class="icon-warning svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-warning"></use>
+            </svg>
+
+            <div class="links">
+                <div id="insurance-link" class="link flex">
+                    <p class="text ff-noto">保險說明</p>
+
+                    <svg class="icon-arrow_forward_ios svg">
+                        <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
+                    </svg>
+                </div>
+
+                <a href="rule.html">
+                    <div class="link flex">
+                        <p class="text ff-noto">報名規則</p>
+
+                        <svg class="icon-arrow_forward_ios svg">
+                            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel-modal">
+        <div class="carousel-box">
+            <ul class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                <li class="carousel-cell">
+                    <img src="/images/B0001/B0001.jpeg" alt="">
+                </li>
+                <li class="carousel-cell">
+                    <img src="/images/B0001/B0001_2.jpeg" alt="">
+                </li>
+                <li class="carousel-cell">
+                    <img src="/images/B0001/B0001_3.jpeg" alt="">
+                </li>
+                <li class="carousel-cell">
+                    <img src="/images/B0001/B0001_4.jpeg" alt="">
+                </li>
+                <li class="carousel-cell">
+                    <img src="/images/B0001/B0001_5.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="insurance" class="insurance-detail-section">
+        <div class="arrow-bar">
+            <svg id="icon-arrow-back" class="icon-arrow_back_ios svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_back_ios"></use>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="title ff-noto">保險說明</h2>
+            <div class="insurance-detail">
+                <h3 class="title ff-noto">國泰產險-登山險</h3>
+                <p class="text ff-noto">
+                    因參加登山活動遭受登山事故，致其失能或死亡，或其身體須經醫院或診所診療者，此保險給付之保險金可補償損失。內容包含：身故保險金或喪葬費用保險金、失能保險金、實支實付傷害醫療保險金、緊急救援費用(如搜尋費用、救護費用、遺體移送費用等)。<br>
+                    <br>
+                    登山綜合保險提供在中華民國境內的登山活動所面臨的風險保障，民眾可購買登山保險保障登山期間所發生的危險，內容包含因登山事故（如落石、失足、失溫等）所導致之死亡、失能及醫療費用給付，以及因發生事故所需進行搜尋、醫療轉送及遺體運送所衍生之費用。
+                </p>
+            </div>
+            <div class="backward-cta ff-noto none">回到上頁</div>
+        </div>
+    </section>
+
+    <div class="spaceForFixed-mobile"></div>
+    <section class="footer-section"></section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/nomad.js"></script>
+
+    <script>
+        //點擊愛心更換顏色
+        $('.icon-heart').click(function(){
+            $('.icon-heart').toggleClass('open');
+        })
+
+
+    // 查看照片modal顯示carousel
+    const checkPicture = document.querySelector('.text-image');
+    const carouselModal = document.querySelector('.carousel-modal');
+
+    checkPicture.addEventListener('click', () => {
+        carouselModal.classList.add('open');
+    });
+
+    carouselModal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('carousel-modal')) {
+            carouselModal.classList.remove('open');
+        }
+    });
+
+    // 保險說明頁面滑進滑出
+    const insuranceLink = document.querySelector('#insurance-link');
+    const backward = document.querySelector('#icon-arrow-back');
+    const insuranceDetail = document.querySelector('#insurance');
+
+    insuranceLink.addEventListener('click', () => {
+        insuranceDetail.classList.add('open');
+        modal.classList.add('open');
+    })
+
+    backward.addEventListener('click', () => {
+        insuranceDetail.classList.remove('open');
+        modal.classList.remove('open');
+    })
+
+    // 立即報名頁面滑進滑出
+    const exitBuyNowPage = document.querySelector('#icon-cross');
+    const slideUpPage = document.querySelector('#buy-now-section');
+    const ButNowBtnMobile = document.querySelector('#buyNowBtn');
+
+
+    ButNowBtnMobile.addEventListener('click', () => {
+        console.log('hi');
+        slideUpPage.classList.add('open');
+    })
+
+    exitBuyNowPage.addEventListener('click', () => {
+        slideUpPage.classList.remove('open');
+    })
+
+    //carousel 推薦行程 箭頭+1 -1
+    const prev = document.querySelector('#prev');
+    const next = document.querySelector('#next');
+    let pageSpan = document.querySelector('.page');
+    const board = document.querySelector('.wrap-img');
+
+
+    next.addEventListener('click', function() {
+        let page = pageSpan.innerText * 1;
+        if (page < 3) {
+            board.style.left = `${-1103 * page}px`;
+            page++;
+        }
+        pageSpan.innerText = page;
+    });
+
+    prev.addEventListener('click', function() {
+        let page = pageSpan.innerText * 1;
+        page--;
+        if (page > 1) {
+            board.style.left = `${(-1103 * page) + (1103 * (page - 1))}px`;
+        } else if (page = 1) {
+            board.style.left = '0px';
+        }
+        pageSpan.innerText = page;
+    })
+
+    //手刻mobile carousel
+    var slider = {
+
+        el: {
+            slider: $(".carousel"),
+            holder: $(".wrap-img"),
+            imgSlide: $(".carousel-cell")
+        },
+
+        slideWidth: $('.carousel').width() - 81,
+        touchstartX: undefined,
+        touchmoveX: undefined,
+        moveX: undefined,
+        index: 0,
+        longTouch: undefined,
+
+        init: function() {
+            this.bindUIEvents();
+        },
+
+        bindUIEvents: function() {
+
+            this.el.holder.on("touchstart", function(event) {
+                slider.start(event);
+            });
+
+            this.el.holder.on("touchmove", function(event) {
+                slider.move(event);
+            });
+
+            this.el.holder.on("touchend", function(event) {
+                slider.end(event);
+            });
+        },
+
+        start: function(event) {
+            // Test for flick.
+            // this.longTouch = false;
+            // setTimeout(function() {
+            //     window.slider.longTouch = true;
+            // }, 1000);
+
+            // Get the original touch position.
+            this.touchstartX = event.originalEvent.touches[0].pageX;
+
+            // The movement gets all janky if there's a transition on the elements.
+            $('.animate').removeClass('animate');
+        },
+
+        move: function(event) {
+            // Continuously return touch position.
+            this.touchmoveX = event.originalEvent.touches[0].pageX;
+            // Calculate distance to translate holder.
+            this.moveX = this.index * this.slideWidth + (this.touchstartX - this.touchmoveX);
+            // Defines the speed the images should move at.
+            // var panX = 100 - this.moveX / 6;
+            if (this.moveX < 2420) { // Makes the holder stop moving when there is no more content.
+                this.el.holder.css('transform', 'translate3d(-' + this.moveX + 'px,0,0)');
+            }
+        },
+
+        end: function(event) {
+            // Calculate the distance swiped.
+            let absMove = Math.abs(this.index * this.slideWidth - this.moveX);
+            // Calculate the index. All other calculations are based on the index.
+            if (absMove > this.slideWidth / 2 || this.longTouch === false) {
+                if (this.moveX > this.index * this.slideWidth && this.index < 8) {
+                    this.index++;
+                } else if (this.moveX < this.index * this.slideWidth && this.index > 0) {
+                    this.index--;
+                }
+            }
+
+            // Move and animate the elements.
+            this.el.holder.addClass('animate').css('transform', 'translate3d(-' + this.index * this
+                .slideWidth + 'px,0,0)');
+        }
+        };
+
+slider.init();
+
+//點擊更多展開行程介紹
+const mountainIntro = document.querySelector('.mountain-intro');
+    const comment = document.querySelector('.comment-flexBox');
+    const mountainIntroBtns = document.querySelectorAll('.mountain-intro-container .btn');
+    const commentBtns = document.querySelectorAll('.comment-section .btn');
+
+    mountainIntroBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            mountainIntro.classList.toggle('open');
+            mountainIntroBtns[0].classList.toggle('none');
+            mountainIntroBtns[1].classList.toggle('none');
+        })
+    })
+
+    commentBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            comment.classList.toggle('open');
+            commentBtns[0].classList.toggle('none');
+            commentBtns[1].classList.toggle('none');
+        })
+    });
+
+    const days = document.querySelectorAll('.activity-intro-section .right-bottom .text');
+    const activity = document.querySelectorAll('.activity-intro-section .left p.text');
+    days[0].classList.add('active');
+
+    days.forEach(day => {
+        day.addEventListener('click', (e) => {
+            for (let i = 0; i < days.length; i++) {
+                days[i].classList.remove('active');
+                activity[i].classList.add('none');
+            };
+            let index = e.currentTarget.getAttribute('data-days');
+            e.currentTarget.classList.add('active');
+            activity[index].classList.remove('none');      
+        })
+    })
+
+    //點擊更換嚮導資訊
+    $('.guides p.text').click(function() {
+        $('.guide-intro-cards .card').toggleClass('none');
+        $('.guides p.text').toggleClass('active');
+    })
+    </script>
+  </body>
+</html>
