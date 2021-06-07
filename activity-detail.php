@@ -759,14 +759,6 @@ $a_sql = "SELECT * FROM schedule ORDER BY RAND() LIMIT 9";
         slideUpPage.classList.remove('open');
     })
 
-    //點擊愛心後變紅
-    // const hearts = document.querySelectorAll('.icon-heart');
-
-    // hearts.forEach(heart => {
-    //     heart.addEventListener('click', () => {
-    //         heart.classList.toggle('open');
-    //     });
-    // });
 
     //carousel 推薦行程 箭頭+1 -1
     const prev = document.querySelector('#prev');
