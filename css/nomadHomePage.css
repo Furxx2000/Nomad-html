@@ -550,10 +550,15 @@ section.news-section div.readmore-cta {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-weight: 500;
+  transition: 0.25s;
 }
 
 section.news-section div.readmore-cta:active {
   transform: scale(0.95);
+}
+
+section.news-section div.readmore-cta:hover {
+  background-color: var(--secondary-color);
 }
 
 /* -----------------explore-section-mobile----------------*/
@@ -672,10 +677,15 @@ div.explore-section-cta {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-weight: 500;
+  transition: 0.25s;
 }
 
 div.explore-section-cta:active {
   transform: scale(0.95);
+}
+
+div.explore-section-cta:hover {
+  background-color: var(--secondary-color);
 }
 
 /* --------------------detail-section-mobile------------------------*/
@@ -780,10 +790,15 @@ div.detail-section-cta {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-weight: 500;
+  transition: 0.25s;
 }
 
 div.detail-section-cta:active {
   transform: scale(0.95);
+}
+
+div.detail-section-cta:hover {
+  background-color: var(--secondary-color);
 }
 
 /* ----------------Achievement-section-mobile---------------- */
@@ -895,10 +910,15 @@ div.achievement-section-cta {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-weight: 500;
+  transition: 0.25s;
 }
 
 div.achievement-section-cta:active {
   transform: scale(0.95);
+}
+
+div.achievement-section-cta:hover {
+  background-color: var(--secondary-color);
 }
 
 /* --------------------comment-section-mobile--------------------- */
@@ -1634,6 +1654,15 @@ section.fixed-section span.nav-badge {
     margin-top: -380px;
     font-weight: 400;
     font-size: 1.2rem;
+    transition: 0.25s;
+  }
+
+  section.comment-section h3.title:hover {
+    background-color: var(--secondary-color);
+  }
+
+  section.comment-section h3.title:active {
+    transform: scale(0.95) translateX(-50%);
   }
 
   section.comment-section div.comments {
