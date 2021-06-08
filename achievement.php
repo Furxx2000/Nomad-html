@@ -8,6 +8,36 @@ if(! isset($_SESSION['user'])){
     exit;
 }
 
+$a = 1;
+$b = 1;
+$c = 2;
+$d = 2;
+ 
+$total_schedule = 30;
+$m_id = intval($_SESSION['user']['id']);
+$sql = "SELECT s.* FROM order_details o
+JOIN schedule s ON o.schedule_sid=s.sid
+WHERE o.`member_sid`=$m_id ";
+
+    $stmt = $pdo->query($sql);
+    $rows = $stmt->fetchAll();
+
+$count_sql = "SELECT COUNT(*) FROM order_details WHERE member_sid = $m_id and schedule_sid > 1";
+$count_stmt = $pdo->query($count_sql);
+$count = $count_stmt->fetchColumn();
+
+$pur_sql = "SELECT * FROM orders JOIN order_details ON orders.member_sid = $m_id AND orders.sid = order_details.order_sid JOIN schedule ON order_details.schedule_sid = schedule.sid ORDER BY orders.order_date DESC"; 
+
+$purchase = $pdo->query($pur_sql)->fetchAll();
+$total_a = $a*$count;
+$total_b = $b*$count;
+$total_c = $c*$count;
+$total_d = $d*$count;
+$total = $total_a + $total_b  + $total_c + $total_d;
+$bar_num = ($count / 30)*100;
+
+$achievement = 6 * $count;
+
 
 
 ?>
@@ -63,7 +93,15 @@ if(! isset($_SESSION['user'])){
                 <?php endif; ?>
                 <div class="textbox">
                     <h1 class="title ff-noto"><?= htmlentities($_SESSION['user']['nickname']) ?></h1>
-                    <span class="rank ff-raleway">Gold</span>
+                    <span class="rank ff-raleway">
+                        <?php if ($achievement < 10){
+                            echo 'Silver';
+                            }else if($achievement < 20 ){
+                            echo 'Gold';
+                            }else {
+                            echo 'Platinum';
+                            } ?>
+                    </span>
                     <div class="trophy">
                         <img src="./img/p2-gold-trophy.png">
                     </div>

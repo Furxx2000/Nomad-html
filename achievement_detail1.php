@@ -5,6 +5,11 @@ if(! isset($_SESSION['user'])){
     exit;
 }
 
+$sid = isset($_GET['sid']) ? intval($_GET['sid']) : 0;
+
+$sql = "SELECT * FROM schedule WHERE sid = $sid";
+    $stmt = $pdo->query($sql);
+    $row = $stmt->fetch();
 
 
 
