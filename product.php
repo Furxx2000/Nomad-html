@@ -91,41 +91,6 @@ $row = $stmt->fetch();
         </a>
     </div>
 
-    <!-- 已成功加入收藏的光箱 -->
-    <!-- <div id="js-modal" class="modal">
-        <div class="modal-container">
-            <div class="modal-inner">
-                <div class="success-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="65" viewBox="0 0 64 65">
-                        <defs>
-                            <clipPath id="clip-path">
-                                <rect width="45" height="46" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g id="Group_1224" data-name="Group 1224" transform="translate(-156 -145)">
-                            <ellipse id="Ellipse_249" data-name="Ellipse 249" cx="32" cy="32.5" rx="32" ry="32.5" transform="translate(156 145)" fill="#f0a500" />
-                            <g id="Yes" transform="translate(170 164)" clip-path="url(#clip-path)">
-                                <rect id="Rectangle_460" data-name="Rectangle 460" width="46" height="46" fill="none" />
-                                <path id="Checkbox" d="M16.314,28.371,0,12.058l3.31-3.31,13,12.767L37.829,0l3.31,3.31Z" transform="translate(0 0.797)" fill="#fff" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <p>已成功加入收藏</p>
-
-                <button id="js-close" class="modal-close" type="button">確認</button> -->
-
-    </div>
-    </div>
-    </div>
-
-
-
-
-
-
-
-
 
     <!-- 商品標題 -->
     <h1>
@@ -153,13 +118,6 @@ $row = $stmt->fetch();
             <div class="filter_price">
                 <br>
                 <p>Price</p>
-                <?php /*
-            <?php foreach ($price_rows as $p) : ?>
-                <input class="inp" type="checkbox" name="price"><a data-sid="<?= $p['sid'] ?>"
-                    href="javascript:changeCate('<?= $p['name'] ?>', <?= $p['sid'] ?>)"><?= $p['name'] ?></a><br>
-                <?php endforeach; ?>
-                */ ?>
-
 
                 <input class="priceItem" type="radio" name="price" onclick="changePrice(0,18000)"><span>All</span><br>
                 <input class="priceItem" type="radio" name="price" onclick="changePrice(15000,18000)"><span> $ 15,000 ~
@@ -186,12 +144,6 @@ $row = $stmt->fetch();
                 <option value="none" selected="selected">全部</option>
                 <?php foreach ($cate_rows as $c) : ?>
                 <option value="<?= $c['sid'] ?>" data-sid="<?= $c['name'] ?>"><?= $c['name'] ?></option>
-                <!-- <option value="">登山杖</option>
-            <option value="">水壺</option>
-            <option value="">登山帽/頭巾</option>
-            <option value="">頭燈</option>
-            <option value="">睡袋/睡墊</option>
-            <option value="">專業儀器</option> -->
                 <?php endforeach; ?>
             </select>
             <select class="width" onchange="mobileChangePrice(event)">
@@ -206,57 +158,13 @@ $row = $stmt->fetch();
             </select>
         </div>
 
-
-
-
         <section class="product_list">
             <div class="box">
             </div>
         </section>
 
-
-
         <div class="top"></div>
-
-        <!-- 手機版的頁面選項 -->
-        <!-- <section class="simple-pagination">
-        <ul class="pagination">
-
-        </ul>
-
-
-        
-    </section> -->
-        <!-- <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">»</a> -->
-
     </div>
-
-    <!-- 以下為桌機版的頁面選項 -->
-    <!-- <div class="pagination">
-        <div class="pagination_PC">
-            <a href="javascript: backwardPage()">
-                <li class="arrow">
-                    <svg class="icon-arrow_back_ios svg">
-                        <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_back_ios"></use>
-                    </svg>
-                </li>
-            </a>
-            <div class="simple-pagination_PC">
-            </div>
-            <a href="javascript: forwardPage()">
-                <li class="arrow">
-                    <svg class="icon-arrow_forward_ios svg">
-                        <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
-                    </svg>
-                </li>
-            </a>
-        </div>
-    </div> -->
 
     <section class="pagination-section">
         <div class="container flex">
@@ -283,12 +191,7 @@ $row = $stmt->fetch();
     </section>
     </section>
 
-
-
     <div class="footer"></div>
-
-
-
 
     <?php include __DIR__ . '/parts-php/html-footer.php'; ?>
     <?php include __DIR__ . '/parts-php/html-fixedBar.php'; ?>
