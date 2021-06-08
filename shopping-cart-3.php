@@ -219,16 +219,6 @@ $pageName = 'form';
     // 表單檢查
     function checkForm() {
 
-        //回復原來的狀態
-        // fields.forEach(el => {
-        //     if (window.matchMedia("(max-width: 700px)").matches) {
-        //         el.css('border-bottom', '1px solid #bbbbbb');
-        //     } else {
-        //         el.css('border', '1px solid #bbbbbb');
-        //     }
-        //     el.next().text('');
-        // })
-
         let isPass = true;
 
         if ($name.val().length < 2) {

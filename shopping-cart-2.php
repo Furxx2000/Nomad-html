@@ -434,27 +434,6 @@ $pageName = 'cart';
         });
         calPrices();
     });
-
-    const delItemModal = document.querySelector('.delete-item-modal');
-    const delItemBtns = document.querySelectorAll('.icon-cross');
-    const cancelBtn = document.querySelector('.cancel-btn');
-    const exitDelPage = document.querySelector('.delete-item-modal .icon-cross');
-
-
-    delItemBtns.forEach(delItemBtn => {
-        delItemBtn.addEventListener('click', () => {
-            delItemModal.classList.add('open');
-        });
-    });
-
-
-    cancelBtn.addEventListener('click', () => {
-        delItemModal.classList.remove('open');
-    });
-
-    exitDelPage.addEventListener('click', () => {
-        delItemModal.classList.remove('open');
-    })
     </script>
 
 
