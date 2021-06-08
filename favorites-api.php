@@ -38,25 +38,9 @@ if (empty($_SESSION['user'])) {
 
         if (empty($row)) {
 
-            // $s_sql = "SELECT * FROM favorites WHERE target_id=$pid"; // 查詢資料表
-            // // $s_row = $pdo->query($sql)->fetch(); //撈出一筆資料
-            // $stmt = $pdo->prepare($s_sql);
-            // $stmt->execute();
-
-            // if ($stmt->rowCount()) {
-            //     $output['result'] = 4;
-            //     // 如果有　就刪除
-            //     $target_id = $pid;
-            //     $df_sql = "DELETE FROM favorites WHERE member_id =2 AND `target_id`= $target_id";
-            //     $df_stmt = $pdo->prepare($df_sql);
-            //     $df_stmt->execute();
-            // } else {
             $output['result'] = 5;
             $output['addOrDel'] = 'add';
-            // 沒有　就新增
-            // $_SESSION['user']['id'] = 2;
 
-            //
             $target_id = $pid;
             $f_sql = "INSERT INTO favorites ( `member_id`, `type`, `target_id`, `date`)
                                             VALUES ( ?, ?, ?, NOW())";
@@ -67,8 +51,6 @@ if (empty($_SESSION['user'])) {
                 $target_id
             ]);
 
-            //     $favorite_sid = $pdo->lastInsertId();
-            // }
         } else {
             $output['addOrDel'] = 'del';
             $target_id = $pid;
@@ -81,22 +63,6 @@ if (empty($_SESSION['user'])) {
         }
     }
 }
-//         break;
 
-
-//     case 'delete':
-//         if (!empty($pid)) {
-//             // $where = " WHERE member_id = $_SESSION['user']['id'] ";
-//             // $where
-//             $target_id = $pid;
-//             $df_sql = "DELETE FROM favorites WHERE member_id =2 AND `target_id`= $target_id";
-//             $df_stmt = $pdo->prepare($df_sql);
-//             $df_stmt->execute();
-//         }
-//         break;
-
-//     default:
-//     case 'list':
-// }
 
 echo json_encode($output, JSON_UNESCAPED_UNICODE);
