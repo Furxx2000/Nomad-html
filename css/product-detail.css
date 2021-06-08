@@ -38,6 +38,11 @@
   background-size: contain;
   transform: translateY(20px);
   fill: none;
+  transition: 0.1s;
+}
+
+.love:active {
+  transform: translateY(20px) scale(0.8) !important;
 }
 .fill {
   fill: #a75353;
