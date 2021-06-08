@@ -98,7 +98,13 @@ h3 {
   /* text-align: right; */
   cursor: pointer;
   fill: none;
+  transition: 0.1s;
 }
+
+.love1:active {
+  transform: scale(0.8) !important;
+}
+
 .fill {
   fill: #a75353;
 }
@@ -177,7 +183,7 @@ section.pagination-section ul.pagination {
 }
 
 section.pagination-section li.arrow {
-  flex: 0 1 15%;
+  flex: 0 1 auto;
 }
 
 section.pagination-section ul.pagination li {
@@ -275,7 +281,7 @@ section.pagination-section svg {
     margin: 0 auto;
   }
 
-  h1 {
+  h1.title {
     display: block;
     text-align: center;
     width: fit-content;
