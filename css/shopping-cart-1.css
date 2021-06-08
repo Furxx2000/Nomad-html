@@ -723,7 +723,7 @@ section.shopping-cart-section div.checkout-cta {
 }
 
 section.shopping-cart-section div.checkout-cta:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 section.shopping-cart-section div.checkout-cta p.text {
@@ -1365,11 +1365,16 @@ div.notice-modal p.confirm-btn:active {
   }
 
   section.shopping-cart-section div.checkout-cta {
-    left: 83%;
+    left: 82%;
   }
 
   section.shopping-cart-section div.checkout-cta p.text {
     padding: 0.8rem 2rem;
+    transition: 0.25s;
+  }
+
+  section.shopping-cart-section div.checkout-cta p.text:hover {
+    background-color: var(--secondary-color);
   }
 
   /* --------------------------delete-item-modal-desktop------------------------- */
