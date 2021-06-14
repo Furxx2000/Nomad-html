@@ -74,62 +74,17 @@ $a_rows = $a_stmt->fetchAll();
         <div class="logo"></div>
     </div>
 
-    <!-- 已成功加入收藏的光箱 -->
-    <!-- <div class="modalLike">
-        <div class="modalLike-container">
-            <div class="modalLike-inner">
-                <div class="success-icon-like">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="65" viewBox="0 0 64 65">
-                        <defs>
-                            <clipPath id="clip-path">
-                                <rect width="45" height="46" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g id="Group_1224" data-name="Group 1224" transform="translate(-156 -145)">
-                            <ellipse id="Ellipse_249" data-name="Ellipse 249" cx="32" cy="32.5" rx="32" ry="32.5" transform="translate(156 145)" fill="#f0a500" />
-                            <g class="Yes" transform="translate(170 164)" clip-path="url(#clip-path)">
-                                <rect id="Rectangle_460" data-name="Rectangle 460" width="46" height="46" fill="none" />
-                                <path class="Checkbox" d="M16.314,28.371,0,12.058l3.31-3.31,13,12.767L37.829,0l3.31,3.31Z" transform="translate(0 0.797)" fill="#fff" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <p>已成功加入收藏</p>
-
-                <button class="modalLike-close" type="button">確認</button>
-
-            </div>
-        </div>
-    </div> -->
-
     <!-- 已成功加入購物車的光箱 -->
     <div class="modalCart">
         <div class="modalCart-container">
             <div class="modalCart-inner">
                 <div class="success-icon-cart">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="65" viewBox="0 0 64 65">
-                        <defs>
-                            <clipPath id="clip-path1">
-                                <rect width="45" height="46" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g id="Group_12241" data-name="Group 1224" transform="translate(-156 -145)">
-                            <ellipse id="Ellipse_2491" data-name="Ellipse 249" cx="32" cy="32.5" rx="32" ry="32.5" transform="translate(156 145)" fill="#f0a500" />
-                            <g id="Yes1" transform="translate(170 164)" clip-path="url(#clip-path)">
-                                <rect id="Rectangle_4601" data-name="Rectangle 460" width="46" height="46" fill="none" />
-                                <path id="Checkbox1" d="M16.314,28.371,0,12.058l3.31-3.31,13,12.767L37.829,0l3.31,3.31Z" transform="translate(0 0.797)" fill="#fff" />
-                            </g>
-                        </g>
-                    </svg> -->
                     <svg class="icon-done svg">
                         <use xlink:href="./icomoon/symbol-defs.svg#icon-done"></use>
                     </svg>
-
                 </div>
                 <p>已成功加入購物車</p>
-
                 <button class="modalCart-close" type="button">確認</button>
-
             </div>
         </div>
     </div>
@@ -214,6 +169,7 @@ $a_rows = $a_stmt->fetchAll();
         </div>
 
     </section>
+
     <!-- PC版的其他相關產品 -->
     <div class="other_message">
         <div class="border"></div>
@@ -239,27 +195,14 @@ $a_rows = $a_stmt->fetchAll();
                     </div>
                 </div>
                 <?php endforeach; ?>
-
-
-                <!-- <div class="product_name1">
-                    <img src="./images/montane-alpine-mission-goretex.svg" alt="">
-                    <p>拔熱式透氣背包<br>NT1,200</p>
-                </div>
-                <div class="product_name1">
-                    <img src="./images/montane-alpine-mission-goretex.svg" alt="">
-                    <p>拔熱式透氣背包<br>NT1,200</p>
-                </div> -->
             </div>
 
             <div class="product_content_message">
 
                 <div class="product_intro_PC ff-noto" data-sid="<?= $row['sid'] ?>">
                     <?= $row['product_info'] ?>
-
                 </div>
-
             </div>
-
 
             <!-- PC的商品數量 -->
             <div class="product_main_name" data-sid="<?= $row['sid'] ?>">
@@ -274,10 +217,6 @@ $a_rows = $a_stmt->fetchAll();
                             <input class="min" name="" type="button" style="font-size:50px" value="-">
                             <input class="num" name="num" type="text" value="1" readonly="true">
                             <input class="add" name="" style="font-size:50px" type="button" value="+">
-
-                            <!-- <div class="obj">-</div>
-                            <div class="obj">2</div>
-                            <div class="obj">+</div> -->
                         </div>
                     </div>
                 </div>
@@ -520,10 +459,7 @@ $a_rows = $a_stmt->fetchAll();
             } else {
                 love1.removeClass('fill');
             }
-
-
         }, 'json');
-
     };
     const modalClose = $(".modalLike");
     const closeBtn = $(".modalLike-close");
@@ -630,7 +566,6 @@ $a_rows = $a_stmt->fetchAll();
     const exit = document.querySelector(".cancel")
 
     purchaseBtn.addEventListener("click", () => {
-        console.log("hi");
         modal.classList.add("open");
         purchaseProduct.classList.add("purchase-btn");
     });
