@@ -110,30 +110,30 @@
     <div class="module-navbar">
       <div class="homepage-container flex">
         <div class="navbar-left">
-            <a href="nomadHomePage.html">
-                <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="">
-            </a>
+          <a href="nomadHomePage.html">
+            <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="" />
+          </a>
         </div>
         <div class="navbar-right flex">
-            <a href="./shopping-cart-1.html">
-                <div class="cart mr-1 none">
-                    <svg class="icon-cart svg">
-                        <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
-                    </svg>
-                    <span class="nav-badge ff-airbnb">0</span>
-                </div>
-            </a>
-            <div class="user-icon flex none">
-                <a class="btn btn-nomad" href="logout.html"> 登出</a>
+          <a href="./shopping-cart-1.html">
+            <div class="cart mr-1 none">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">0</span>
             </div>
-            <div class="hamburger" id="mobile-cta">
-                <input type="checkbox" name="" id="check" />
-                <div class="hamburger-menu-container">
-                    <div class="hamburger-menu">
-                        <div></div>
-                    </div>
-                </div>
+          </a>
+          <div class="user-icon flex none">
+            <a class="btn btn-nomad" href="logout.html"> 登出</a>
+          </div>
+          <div class="hamburger" id="mobile-cta">
+            <input type="checkbox" name="" id="check" />
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                <div></div>
+              </div>
             </div>
+          </div>
           <nav>
             <ul>
               <!-- 可能使用javascript append生成 -->
@@ -237,604 +237,810 @@
     <div class="module-modal"></div>
 
     <div class="body_wrap">
-        <section class="member_banner">
-            <div class="member_wrap">
-                <div class="member_card">
-                    <div class="member_card_title">
-                        <div class="member_card_title_left">
-                            <a href="#" class="member_card_img"><img src="./images/note/申敏兒.jpg"></a>
-                            <div class="member_card_username">申敏兒</div>
-                        </div>
-                        <div class="member_card_share_wrap">
-                            <a href="notebook.html" class="member_card_share">
-                                <i class="fas fa-comment fa-2x active"></i>
+      <section class="member_banner">
+        <div class="member_wrap">
+          <div class="member_card">
+            <div class="member_card_title">
+              <div class="member_card_title_left">
+                <a href="#" class="member_card_img"
+                  ><img src="./images/User-icon/Ellipse -1.png"
+                /></a>
+                <div class="member_card_username">Christine</div>
+              </div>
+              <div class="member_card_share_wrap">
+                <a href="notebook.html" class="member_card_share">
+                  <i class="fas fa-comment fa-2x active"></i>
+                </a>
+                <a href="notebook.html">
+                  <div class="member_card_share_text">分享登山記事</div>
+                </a>
+              </div>
+            </div>
+            <div class="member_card_line"></div>
+            <div class="member_card_detail">
+              <div class="member_card_first member_card_bg">
+                <div class="member_card_participate_num card_num">2</div>
+                <div class="member_card_participate">參與行程</div>
+              </div>
+              <div class="member_card_second member_card_bg">
+                <div class="member_card_achivement_num card_num">12</div>
+                <div class="member_card_achivement">已解鎖成就</div>
+              </div>
+              <div class="member_card_third member_card_bg">
+                <div class="member_card_level_num card_num">Gold</div>
+                <div class="member_card_level">個人等級</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="member_container">
+        <div class="member_wrap_scroll">
+          <div id="yc-navbar" class="nav_side sticky-top">
+            <ul class="member_navbar_nav">
+              <li class="member_nav_item">
+                <a
+                  data-scroll-trigger="1"
+                  class="member_nav_link text_active"
+                  href="#sec_01"
+                  ><i class="fas fa-address-card"></i
+                  ><span class="progress_active" id="sec_icon_01"
+                    >帳號管理</span
+                  ></a
+                >
+              </li>
+              <li class="member_nav_item">
+                <a
+                  data-scroll-trigger="2"
+                  class="member_nav_link"
+                  href="#sec_02"
+                  ><i class="fas fa-heart"></i><span class="">我的最愛</span></a
+                >
+              </li>
+              <li class="member_nav_item">
+                <a
+                  data-scroll-trigger="3"
+                  class="member_nav_link"
+                  href="#sec_03"
+                  ><i class="fas fa-trophy"></i><span>成就紀錄</span></a
+                >
+              </li>
+              <li class="member_nav_item">
+                <a
+                  data-scroll-trigger="4"
+                  class="member_nav_link"
+                  href="#sec_04"
+                  ><i class="fas fa-history"></i><span>購買紀錄</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="member_content">
+          <div
+            data-scroll-target="1"
+            class="member_content_bigbox member_content_bigbox_rotate section"
+            id="sec_01"
+          >
+            <div
+              class="member_content_box member_content_box_rotate"
+              id="cover"
+            >
+              <div class="member_content_title">
+                <div class="member_content_tabs">
+                  <i class="fas fa-address-card"></i><span>帳號管理</span>
+                </div>
+              </div>
+              <div class="member_content_wrap">
+                <div class="member_content_info">
+                  <div class="member_content_user">
+                    <img
+                      class="member_content_userimg"
+                      src="./images/User-icon/Ellipse -1.png"
+                    />
+                    <div class="member_content_username">Christine</div>
+                  </div>
+                  <div class="member_content_account">
+                    <div class="left col-3 col-lg-6">
+                      <ul>
+                        <li>帳號</li>
+                        <li>性別</li>
+                        <li>電話</li>
+                        <li>生日</li>
+                      </ul>
+                    </div>
+                    <div class="right col-9 col-lg-6">
+                      <ul>
+                        <li class="email">aaa@gmail.com</li>
+                        <li class="gender">女</li>
+                        <li class="mobile">0912345678</li>
+                        <li class="birthday">1998-01-02</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member_content_btn" id="modify_info">
+                <button class="btn btn-nomad2">修改資料</button>
+              </div>
+            </div>
+            <form
+              class="member_content_box member_content_box_rotate"
+              id="back"
+              method="POST"
+              name="form3"
+              novalidate
+            >
+              <div class="member_content_title">
+                <div class="member_content_tabs">
+                  <i class="fas fa-address-card"></i><span>帳號管理</span>
+                </div>
+              </div>
+              <div class="member_content_wrap">
+                <div class="member_content_info">
+                  <div class="member_content_user">
+                    <img
+                      class="member_content_userimg"
+                      onclick="triggerClick()"
+                      src="./images/User-icon/Ellipse -1.png"
+                      id="profileDisplay"
+                    />
+                    <input type="file" name="profileImage" id="profileImage" />
+                    <input
+                      name="profile_image"
+                      type="hidden"
+                      id="profile_image"
+                      value=""
+                    />
+                    <div class="member_content_username">
+                      <input
+                        name="nickname"
+                        type="text"
+                        id="nickname"
+                        value="Christine"
+                      />
+                    </div>
+                  </div>
+                  <div class="member_content_account">
+                    <div class="left col-3 col-lg-6">
+                      <ul>
+                        <li>帳號</li>
+                        <li>性別</li>
+                        <li>電話</li>
+                        <li>生日</li>
+                      </ul>
+                    </div>
+                    <div class="right col-9 col-lg-6 user_input">
+                      <ul>
+                        <li>aaa@gmail.com</li>
+                        <li><input type="text" name="gender" value="女" /></li>
+                        <li>
+                          <input
+                            type="text"
+                            name="mobile"
+                            id="mobile"
+                            value="0912345678"
+                          />
+                        </li>
+                        <li>
+                          <input
+                            type="text"
+                            name="birthday"
+                            id="member_birth"
+                            placeholder="yyyy-mm-dd"
+                            value="1998-01-02"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="member_content_btn member_content_btn_delete">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="member_content_btn" id="modify_info_submit">
+                <button type="submit" class="btn btn-nomad">送出</button>
+              </div>
+            </form>
+          </div>
+          <div
+            data-scroll-target="2"
+            class="member_content_bigbox section"
+            id="sec_02"
+          >
+            <div class="member_content_box member_content_box_favorite">
+              <div class="member_content_title">
+                <div class="member_content_tabs">
+                  <i class="fas fa-heart"></i><span>我的最愛</span>
+                </div>
+              </div>
+              <div class="member_content_wrap">
+                <div class="member_content_info">
+                  <div class="member_tabs">
+                    <div class="member_tab_header">
+                      <div class="member_active" id="favorite_schedule">
+                        <span>行程</span>
+                      </div>
+                      <div id="favorite_product"><span>商品</span></div>
+                      <div id="favorite_blog"><span>登山記事</span></div>
+                    </div>
+                    <div class="member_tab_indicator"></div>
+                    <div class="member_tab_body_wrap">
+                      <div class="member_tab_body" id="favorite">
+                        <div class="member_favorite_card_wrap_box" id="first">
+                          <div
+                            class="
+                              member_tab_active_schedule
+                              member_favorite_card_wrap
+                            "
+                          >
+                            <a href="activity-detail.html">
+                              <div class="member_favorite_card">
+                                <div class="member_favorite_img">
+                                  <img src="./images/B0008/B0008.jpeg" alt="" />
+                                </div>
+                                <div class="member_favorite_title">
+                                  <div class="member_favorite_time">
+                                    2021/06/23 - 06/25
+                                  </div>
+                                  <div class="member_favorite_productname">
+                                    玉山前峰+石山引水道三日遊
+                                  </div>
+                                </div>
+                                <div class="member_favorite_price">
+                                  $ 15,900 TWD
+                                </div>
+                              </div>
                             </a>
-                            <a href="notebook.html">
-                                <div class="member_card_share_text">分享登山記事</div>
+                            <div
+                              class="member_delete"
+                              onclick="deleteItem(event)"
+                            >
+                              <i class="fas fa-times"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="member_favorite_card_wrap_box" id="second">
+                          <div class="member_favorite_card_wrap">
+                            <div class="member_favorite_card">
+                              <a href="product-detail.html">
+                                <div class="flex">
+                                  <div class="member_favorite_img product">
+                                    <img src="/mountain-bag/PA014.jpg" alt="" />
+                                  </div>
+                                  <div
+                                    class="
+                                      member_favorite_title
+                                      member_favorite_title_product
+                                    "
+                                  >
+                                    <div class="member_favorite_productname">
+                                      【GREGORY】Amber 44 登山健行背包 女 44L
+                                      北極灰
+                                    </div>
+                                  </div>
+                                  <div class="member_favorite_price">
+                                    $ 5,920 TWD
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="member_delete"
+                              onclick="deleteItem(event)"
+                            >
+                              <i class="fas fa-times"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="member_favorite_card_wrap_box" id="third">
+                          <div
+                            class="
+                              member_favorite_card_wrap
+                              member_favorite_card_wrap_blog
+                            "
+                          >
+                            <a href="open_notebook.html">
+                              <div class="member_favorite_card blog">
+                                <div class="member_favorite_blog_wrap">
+                                  <div class="member_favorite_blog_title">
+                                    嘉明湖三日遊
+                                  </div>
+                                  <div class="member_favorite_blog_content">
+                                    <div class="member_favorite_blog_wrap_img">
+                                      <img
+                                        src="./images/note/a嘉明湖.jpg "
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="member_favorite_blog_detail">
+                                      <div class="member_favorite_blog_text">
+                                        嘉明湖外形呈完整的橢圓形，此湖是天使的眼淚滴落凡間，雖然只是傳說，不過事實上，
+                                        她也的確應該是隕石撞擊而形成的高山湖泊，四周並無任何活水注入，完全依靠雨水的累積，
+                                        不過湖水卻終年不枯，因此四周動物活動頻繁，隨處都是動物的排遺，水鹿是此地出沒的最大型哺乳類動物。
+                                        聽說這一帶有過不少的山難事件，流傳最久遠的應是在1945年一架美軍軍機墜毀在三叉山、嘉明湖附近。
+                                        當時有大批軍警和原住民組成的搜索隊入山救援，卻遭遇強風與惡劣天候襲擊，
+                                        據說至少有數十名搜索隊成員喪命於附近，自此嘉明湖充滿了許多靈異的傳說，
+                                        當然也曾經發生過迷途失聯等山難事件，甚至有人曾經溺斃於這座海拔3310公尺的高山湖泊中，
+                                        增添了嘉明湖許多神祕的色彩。
+                                        從登山口開始，幾乎全程皆為陡上坡，重裝攀登並不輕鬆，尤其上到稜線之前的那一段比較辛苦，
+                                        上了稜線之後又得抵抗幾乎終年不息的強風，體力負荷稍大。在南橫公路的啞口一帶可看到一處高大的崩壁，
+                                        那就是向陽大崩壁，往嘉明湖的路途中就會經過、而且是走在崩壁的上方邊緣，這感覺是刺激帶一點奇妙。
+                                        要前往嘉明湖得由南橫公路上的向陽森林遊樂區重裝步行進入，
+                                        造訪嘉明湖會經過向陽山和三叉山兩座百岳，
+                                        爬升至稜線之後循著路跡攀上向陽山。站在向陽崩壁的上方，可眺望對面一潟千里的關山大斷崖，若無雲霧的話，
+                                        步道在一望無際的箭竹坡上變得相當顯眼。
+                                      </div>
+                                      <div class="member_favorite_blog_writer">
+                                        <div class="member_blogger_img">
+                                          <img
+                                            src="./images/note/profile_image_2.jpg"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="member_blogger_name">
+                                          迪麗熱巴
+                                        </div>
+                                        <div class="member_blogger_time">
+                                          2021-06-14
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </a>
+                            <div
+                              class="member_delete"
+                              onclick="deleteItem(event)"
+                            >
+                              <i class="fas fa-times"></i>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                    <div class="member_card_line"></div>
-                    <div class="member_card_detail">
-                        <div class="member_card_first member_card_bg">
-                            <div class="member_card_participate_num card_num">2</div>
-                            <div class="member_card_participate">參與行程</div>
-                        </div>
-                        <div class="member_card_second member_card_bg">
-                            <div class="member_card_achivement_num card_num">12</div>
-                            <div class="member_card_achivement">已解鎖成就</div>
-                        </div>
-                        <div class="member_card_third member_card_bg">
-                            <div class="member_card_level_num card_num">Gold</div>
-                            <div class="member_card_level">個人等級</div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-    
+              </div>
             </div>
-        </section>
-        <section class="member_container">
-            <div class="member_wrap_scroll">
-                <div id="yc-navbar" class="nav_side sticky-top">
-                    <ul class="member_navbar_nav">
-                        <li class="member_nav_item ">
-                            <a data-scroll-trigger="1" class="member_nav_link text_active" href="#sec_01"><i
-                                    class="fas fa-address-card"></i><span class="progress_active"
-                                    id="sec_icon_01">帳號管理</span></a>
-                        </li>
-                        <li class="member_nav_item">
-                            <a data-scroll-trigger="2" class="member_nav_link" href="#sec_02"><i
-                                    class="fas fa-heart"></i><span class="">我的最愛</span></a>
-                        </li>
-                        <li class="member_nav_item">
-                            <a data-scroll-trigger="3" class="member_nav_link" href="#sec_03"><i
-                                    class="fas fa-trophy"></i><span>成就紀錄</span></a>
-                        </li>
-                        <li class="member_nav_item">
-                            <a data-scroll-trigger="4" class="member_nav_link" href="#sec_04"><i
-                                    class="fas fa-history"></i><span>購買紀錄</span></a>
-                        </li>
-                    </ul>
+          </div>
+          <div
+            data-scroll-target="3"
+            class="member_content_bigbox section"
+            id="sec_03"
+          >
+            <div class="member_content_box">
+              <div class="member_content_title">
+                <div class="member_content_tabs">
+                  <i class="fas fa-trophy"></i><span>成就紀錄</span>
                 </div>
+              </div>
+              <div class="member_content_wrap">
+                <div class="member_content_info">
+                  <div class="member_achivement_card_wrap">
+                    <div class="member_achivement_card">
+                      <div class="member_achivetment_wrap_img">
+                        <img src="/images/B0008/B0008.jpeg" alt="" />
+                      </div>
+                      <div class="member_achivetment_content">
+                        <div class="member_achivetment_title">
+                          <h5>玉山前峰+石山引水道三日遊</h5>
+                        </div>
+                        <div class="member_achivetment_bar">
+                          <div class="member_achivetment_bar_num">
+                            <h5>100%</h5>
+                          </div>
+                          <div class="member_achivetment_bar_line">
+                            <div class="member_achivetment_bar_bg">
+                              <div
+                                class="member_achivetment_bar_progress bar_01"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="member_achivetment_tpophy">
+                          <div class="member_achivetment_tpophy_wrap">
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-platinum-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                1
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-gold-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                1
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-silver-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                2
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-bronze-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                2
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="member_achivement_card_wrap">
+                    <div class="member_achivement_card">
+                      <div class="member_achivetment_wrap_img">
+                        <img src="/images/B0003/B0003.jpeg" alt="" />
+                      </div>
+                      <div class="member_achivetment_content">
+                        <div class="member_achivetment_title">
+                          <h5>合歡群峰三日遊</h5>
+                        </div>
+                        <div class="member_achivetment_bar">
+                          <div class="member_achivetment_bar_num">
+                            <h5>100%</h5>
+                          </div>
+                          <div class="member_achivetment_bar_line">
+                            <div class="member_achivetment_bar_bg">
+                              <div
+                                class="member_achivetment_bar_progress bar_01"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="member_achivetment_tpophy">
+                          <div class="member_achivetment_tpophy_wrap">
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-platinum-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                1
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-gold-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                1
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-silver-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                2
+                              </div>
+                            </div>
+                            <div class="wrap_trophy">
+                              <div class="member_achivetment_tpophy_wrap_img">
+                                <img
+                                  src="./images/achievement/ps5-bronze-trophy.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="member_achivetment_tpophy_wrap_num">
+                                2
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="achievement.html">
+                <div class="member_content_btn">
+                  <button class="btn btn-nomad2">我的成就</button>
+                </div>
+              </a>
             </div>
-            
-            <div class="member_content">
-                <div data-scroll-target="1" class="member_content_bigbox member_content_bigbox_rotate section" id="sec_01">
-                    <div class="member_content_box member_content_box_rotate " id="cover">
-                        <div class="member_content_title">
-                            <div class="member_content_tabs"><i class="fas fa-address-card"></i><span>帳號管理</span></div>
-                        </div>
-                        <div class="member_content_wrap">
-                            <div class="member_content_info">
-                                <div class="member_content_user">
-                                    <img class="member_content_userimg" src="./images/note/申敏兒.jpg">
-                                    <div class="member_content_username">申敏兒</div>
-    
-                                </div>
-                                <div class="member_content_account">
-                                    <div class="left col-3 col-lg-6">
-                                        <ul>
-                                            <li>帳號</li>
-                                            <li>性別</li>
-                                            <li>電話</li>
-                                            <li>生日</li>
-                                        </ul>
-                                    </div>
-                                    <div class="right col-9 col-lg-6">
-                                        <ul>
-                                            <li class="email">aaa@gmail.com</li>
-                                            <li class="gender">女</li>
-                                            <li class="mobile">0912345678</li>
-                                            <li class="birthday">1998-01-02</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member_content_btn" id="modify_info"><button class="btn btn-nomad2">修改資料</button></div>
-                    </div>
-                    <form class="member_content_box member_content_box_rotate" id="back" method="POST" name="form3" novalidate>
-                        <div class="member_content_title">
-                            <div class="member_content_tabs"><i class="fas fa-address-card"></i><span>帳號管理</span></div>
-                        </div>
-                        <div class="member_content_wrap">
-    
-                            <div class="member_content_info">
-                                <div class="member_content_user">
-                                    <img class="member_content_userimg" onclick="triggerClick()" src="./images/note/申敏兒.jpg" id="profileDisplay">
-                                    <input type="file" name="profileImage" id="profileImage">
-                                    <input name="profile_image" type="hidden" id="profile_image"
-                                        value="">
-                                    <div class="member_content_username">
-                                        <input name="nickname" type="text" id="nickname"
-                                            value="申敏兒">
-                                    </div>
-                                </div>
-                                <div class="member_content_account">
-                                    <div class="left col-3 col-lg-6">
-                                        <ul>
-                                            <li>帳號</li>
-                                            <li>性別</li>
-                                            <li>電話</li>
-                                            <li>生日</li>
-                                        </ul>
-                                    </div>
-                                    <div class="right col-9 col-lg-6 user_input">
-                                        <ul>
-                                            <li>aaa@gmail.com</li>
-                                            <li><input type="text" name="gender"
-                                                    value="女"></li>
-                                            <li><input type="text" name="mobile" id="mobile" value="0912345678"></li>
-                                            <li><input type="text" name="birthday" id="member_birth" placeholder="yyyy-mm-dd"
-                                                    value="1998-01-02" /></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member_content_btn member_content_btn_delete"><i class="fas fa-times"></i></div>
-                        <div class="member_content_btn" id="modify_info_submit"><button type="submit"
-                                class="btn btn-nomad">送出</button></div>
-                    </form>
-    
+          </div>
+          <div
+            data-scroll-target="4"
+            class="member_content_bigbox section"
+            id="sec_04"
+          >
+            <div class="member_content_box">
+              <div class="member_content_title">
+                <div class="member_content_tabs">
+                  <i class="fas fa-history"></i><span>購買紀錄</span>
                 </div>
-                <div data-scroll-target="2" class="member_content_bigbox section" id="sec_02">
-                    <div class="member_content_box member_content_box_favorite">
-                        <div class="member_content_title">
-                            <div class="member_content_tabs"><i class="fas fa-heart"></i><span>我的最愛</span></div>
-                        </div>
-                        <div class="member_content_wrap">
-                            <div class="member_content_info">
-                                <div class="member_tabs">
-                                    <div class="member_tab_header">
-                                        <div class="member_active" id="favorite_schedule"><span>行程</span></div>
-                                        <div id="favorite_product"><span>商品</span></div>
-                                        <div id="favorite_blog"><span>登山記事</span></div>
-                                    </div>
-                                    <div class="member_tab_indicator"></div>
-                                    <div class="member_tab_body_wrap">
-                                        <div class="member_tab_body" id="favorite">
-                                            <div class="member_favorite_card_wrap_box" id="first">
-                                           
-                                                <div class="member_tab_active_schedule member_favorite_card_wrap">
-                                                    <a href="activity-detail.html">
-                                                        <div class="member_favorite_card">
-                                                            <div class="member_favorite_img">
-                                                                <img src="./images/B0008/B0008.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="member_favorite_title">
-                                                                <div class="member_favorite_time">
-                                                                    2021/06/23 - 06/25
-                                                                </div>
-                                                                <div class="member_favorite_productname">
-                                                                    玉山前峰+石山引水道三日遊
-                                                                </div>
-                                                            </div>
-                                                            <div class="member_favorite_price">
-                                                                $ 15,900 TWD</div>
-                                                        </div>
-                                                    </a>
-                                                    <div class="member_delete" onclick="deleteItem(event)"><i
-                                                            class="fas fa-times"></i>
-                                                    </div>
-                                                </div>
-    
-                                            </div>
-    
-                                            <div class="member_favorite_card_wrap_box" id="second">
-    
-                                                <div class="member_favorite_card_wrap" >
-                                                    <div class="member_favorite_card ">
-                                                        <a href="product-detail.html">
-                                                            <div class="flex">
-                                                                <div class="member_favorite_img product">
-                                                                    <img src="/mountain-bag/PA014.jpg"
-                                                                        alt="">
-                                                                </div>
-                                                                <div
-                                                                    class="member_favorite_title member_favorite_title_product">
-                                                                    <div class="member_favorite_productname">
-                                                                        【GREGORY】Amber 44 登山健行背包 女 44L 北極灰</div>
-                                                                </div>
-                                                                <div class="member_favorite_price">
-                                                                    $ 5,920 TWD
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="member_delete" onclick="deleteItem(event)">
-                                                        <i class="fas fa-times"></i>
-                                                    </div>
-                                                </div>
-       
-                                            </div>
-    
-                                            <div class="member_favorite_card_wrap_box" id="third">
-
-                                                <div class="member_favorite_card_wrap member_favorite_card_wrap_blog">
-                                                    <a href="open_notebook.html">
-                                                        <div class="member_favorite_card blog">
-                                                            <div class="member_favorite_blog_wrap">
-                                                                <div class="member_favorite_blog_title">
-                                                                    嘉明湖三日遊
-                                                                </div>
-                                                                <div class="member_favorite_blog_content">
-                                                                    <div class="member_favorite_blog_wrap_img ">
-                                                                        <img src="./images/note/a嘉明湖.jpg "
-                                                                            alt="">
-                                                                    </div>
-                                                                    <div class="member_favorite_blog_detail">
-                                                                        <div class="member_favorite_blog_text">
-                                                                            嘉明湖外形呈完整的橢圓形，此湖是天使的眼淚滴落凡間，雖然只是傳說，不過事實上，
-她也的確應該是隕石撞擊而形成的高山湖泊，四周並無任何活水注入，完全依靠雨水的累積，
-不過湖水卻終年不枯，因此四周動物活動頻繁，隨處都是動物的排遺，水鹿是此地出沒的最大型哺乳類動物。
-聽說這一帶有過不少的山難事件，流傳最久遠的應是在1945年一架美軍軍機墜毀在三叉山、嘉明湖附近。
-當時有大批軍警和原住民組成的搜索隊入山救援，卻遭遇強風與惡劣天候襲擊，
-據說至少有數十名搜索隊成員喪命於附近，自此嘉明湖充滿了許多靈異的傳說，
-當然也曾經發生過迷途失聯等山難事件，甚至有人曾經溺斃於這座海拔3310公尺的高山湖泊中，
-增添了嘉明湖許多神祕的色彩。
-從登山口開始，幾乎全程皆為陡上坡，重裝攀登並不輕鬆，尤其上到稜線之前的那一段比較辛苦，
-上了稜線之後又得抵抗幾乎終年不息的強風，體力負荷稍大。在南橫公路的啞口一帶可看到一處高大的崩壁，
-那就是向陽大崩壁，往嘉明湖的路途中就會經過、而且是走在崩壁的上方邊緣，這感覺是刺激帶一點奇妙。
- 要前往嘉明湖得由南橫公路上的向陽森林遊樂區重裝步行進入， 造訪嘉明湖會經過向陽山和三叉山兩座百岳，
-爬升至稜線之後循著路跡攀上向陽山。站在向陽崩壁的上方，可眺望對面一潟千里的關山大斷崖，若無雲霧的話，
-步道在一望無際的箭竹坡上變得相當顯眼。div>
-                                                                        <div class="member_favorite_blog_writer">
-                                                                            <div class="member_blogger_img">
-                                                                                <img src="./images/note/profile_image_2.jpg"
-                                                                                    alt="">
-                                                                            </div>
-                                                                            <div class="member_blogger_name">
-                                                                                迪麗熱巴
-                                                                            </div>
-                                                                            <div class="member_blogger_time">
-                                                                                2021-06-14
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <div class="member_delete" onclick="deleteItem(event)"><i
-                                                            class="fas fa-times "></i></div>
-                                                </div>
-                  
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+              <div class="member_content_wrap">
+                <div class="member_content_info">
+                  <div class="member_tabs">
+                    <div class="member_tab_header member_purchase_tab_header">
+                      <div class="member_active" id="purchase_schedule">
+                        <span>行程</span>
+                      </div>
+                      <div id="purchase_product"><span>商品</span></div>
                     </div>
-                </div>
-                <div data-scroll-target="3" class="member_content_bigbox section" id="sec_03">
-                    <div class="member_content_box">
-                        <div class="member_content_title">
-                            <div class="member_content_tabs"><i class="fas fa-trophy"></i><span>成就紀錄</span></div>
-                        </div>
-                        <div class="member_content_wrap">
-                            <div class="member_content_info">
-
-                                <div class="member_achivement_card_wrap">
-                                    <div class="member_achivement_card">
-                                        <div class="member_achivetment_wrap_img">
-                                            <img src="/images/B0008/B0008.jpeg"
-                                                alt="">
-                                        </div>
-                                        <div class="member_achivetment_content">
-                                            <div class="member_achivetment_title">
-                                                <h5>玉山前峰+石山引水道三日遊</h5>
-                                            </div>
-                                            <div class="member_achivetment_bar">
-                                                <div class="member_achivetment_bar_num">
-                                                    <h5>100%</h5>
-                                                </div>
-                                                <div class="member_achivetment_bar_line">
-                                                    <div class="member_achivetment_bar_bg">
-                                                        <div class="member_achivetment_bar_progress bar_01"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="member_achivetment_tpophy">
-                                                <div class="member_achivetment_tpophy_wrap">
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-platinum-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">1</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-gold-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">1</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-silver-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">2</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-bronze-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">2</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member_achivement_card_wrap">
-                                    <div class="member_achivement_card">
-                                        <div class="member_achivetment_wrap_img">
-                                            <img src="/images/B0003/B0003.jpeg"
-                                                alt="">
-                                        </div>
-                                        <div class="member_achivetment_content">
-                                            <div class="member_achivetment_title">
-                                                <h5>合歡群峰三日遊</h5>
-                                            </div>
-                                            <div class="member_achivetment_bar">
-                                                <div class="member_achivetment_bar_num">
-                                                    <h5>100%</h5>
-                                                </div>
-                                                <div class="member_achivetment_bar_line">
-                                                    <div class="member_achivetment_bar_bg">
-                                                        <div class="member_achivetment_bar_progress bar_01"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="member_achivetment_tpophy">
-                                                <div class="member_achivetment_tpophy_wrap">
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-platinum-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">1</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-gold-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">1</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-silver-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">2</div>
-                                                    </div>
-                                                    <div class="wrap_trophy">
-                                                        <div class="member_achivetment_tpophy_wrap_img">
-                                                            <img src="./images/achievement/ps5-bronze-trophy.png" alt="">
-                                                        </div>
-                                                        <div class="member_achivetment_tpophy_wrap_num">2</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div
+                      class="member_tab_indicator member_purchase_tab_indicator"
+                    ></div>
+                    <div class="member_tab_body_wrap">
+                      <div class="member_tab_body" id="purchase">
+                        <div class="member_favorite_card_wrap_box">
+                          <div
+                            class="
+                              member_purchase_wrap_box
+                              member_purchase_wrap_box_product
+                            "
+                          >
+                            <div class="member_purchase_time_wrap">
+                              <div class="member_purchase_time">2021/06/05</div>
+                              <div class="member_purchase_productnum">
+                                商品編號:<span>45612357238</span>
+                              </div>
                             </div>
-                        </div>
-
-                        <a href="achievement.html">
-                            <div class="member_content_btn"><button class="btn btn-nomad2">我的成就</button></div>
-                        </a>
-
-                    </div>
-    
-                </div>
-                <div data-scroll-target="4" class="member_content_bigbox section" id="sec_04">
-                    <div class="member_content_box">
-                        <div class="member_content_title">
-                            <div class="member_content_tabs"><i class="fas fa-history"></i><span>購買紀錄</span></div>
-                        </div>
-                        <div class="member_content_wrap">
-                            <div class="member_content_info">
-                                <div class="member_tabs">
-                                    <div class="member_tab_header member_purchase_tab_header">
-                                        <div class="member_active" id="purchase_schedule"><span>行程</span></div>
-                                        <div id="purchase_product"><span>商品</span></div>
-                                    </div>
-                                    <div class="member_tab_indicator member_purchase_tab_indicator"></div>
-                                    <div class="member_tab_body_wrap">
-                                        <div class="member_tab_body" id="purchase">
-                                            <div class="member_favorite_card_wrap_box">
-                                                
-                                                <div class="member_purchase_wrap_box member_purchase_wrap_box_product">
-                                                    <div class="member_purchase_time_wrap">
-                                                        <div class="member_purchase_time">
-                                                            2021/06/05</div>
-                                                        <div class="member_purchase_productnum">
-                                                            商品編號:<span>45612357238</span>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="member_active member_favorite_card_wrap member_favorite_card_wrap_purchase">
-                                                        <div class="member_favorite_card">
-                                                            <div class="member_favorite_img">
-                                                                <img src="./images/B0008/B0008.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div
-                                                                class="member_favorite_title member_favorite_purchase_title">
-                                                                <div class="member_favorite_time">
-                                                                    2021/06/23 - 06/25</div>
-                                                                <div class="member_favorite_productname">
-                                                                    玉山前峰+石山引水道三日遊
-                                                                    </div>
-                                                                <div class="member_purchase_num">x1</div>
-                                                            </div>
-                                                            <div class="member_favorite_price">$ 15,900 TWD</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="member_commnet_btn_wrap">
-                                                        <div class="member_comment">
-                                                            <button class="btn btn-nomad comment">評論</button>
-                                                        </div>
-                                                    </div>
-                                                </div>                         
-                                            </div>
-                                            <div class="member_favorite_card_wrap_box">
-     
-                                                <div class="member_purchase_wrap_box">
-                                                    <div class="member_purchase_time_wrap">
-                                                        <div class="member_purchase_time">
-                                                            2021/06/05</div>
-                                                        <div class="member_purchase_productnum">
-                                                            商品編號:<span>45612357238</span>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="member_active member_favorite_card_wrap member_favorite_card_wrap_purchase">
-                                                        <div class="member_favorite_card">
-                                                            <div class="member_favorite_img member_favorite_img_puchase">
-                                                                <img src="/mountain-bag/PA014.jpg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div
-                                                                class="member_favorite_title member_favorite_purchase_title">
-                                                                <div class="member_favorite_productname">
-                                                                    【GREGORY】Amber 44 登山健行背包 女 44L 北極灰
-                                                                </div>
-                                                                <div class="member_purchase_num">x1
-                                                                </div>
-                                                            </div>
-                                                            <div class="member_favorite_price">$ 5,920 TWD
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div
+                              class="
+                                member_active
+                                member_favorite_card_wrap
+                                member_favorite_card_wrap_purchase
+                              "
+                            >
+                              <div class="member_favorite_card">
+                                <div class="member_favorite_img">
+                                  <img src="./images/B0008/B0008.jpeg" alt="" />
                                 </div>
+                                <div
+                                  class="
+                                    member_favorite_title
+                                    member_favorite_purchase_title
+                                  "
+                                >
+                                  <div class="member_favorite_time">
+                                    2021/06/23 - 06/25
+                                  </div>
+                                  <div class="member_favorite_productname">
+                                    玉山前峰+石山引水道三日遊
+                                  </div>
+                                  <div class="member_purchase_num">x1</div>
+                                </div>
+                                <div class="member_favorite_price">
+                                  $ 15,900 TWD
+                                </div>
+                              </div>
                             </div>
+                            <div class="member_commnet_btn_wrap">
+                              <div class="member_comment">
+                                <button class="btn btn-nomad comment">
+                                  評論
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div class="member_favorite_card_wrap_box">
+                          <div class="member_purchase_wrap_box">
+                            <div class="member_purchase_time_wrap">
+                              <div class="member_purchase_time">2021/06/05</div>
+                              <div class="member_purchase_productnum">
+                                商品編號:<span>45612357238</span>
+                              </div>
+                            </div>
+                            <div
+                              class="
+                                member_active
+                                member_favorite_card_wrap
+                                member_favorite_card_wrap_purchase
+                              "
+                            >
+                              <div class="member_favorite_card">
+                                <div
+                                  class="
+                                    member_favorite_img
+                                    member_favorite_img_puchase
+                                  "
+                                >
+                                  <img src="/mountain-bag/PA014.jpg" alt="" />
+                                </div>
+                                <div
+                                  class="
+                                    member_favorite_title
+                                    member_favorite_purchase_title
+                                  "
+                                >
+                                  <div class="member_favorite_productname">
+                                    【GREGORY】Amber 44 登山健行背包 女 44L
+                                    北極灰
+                                  </div>
+                                  <div class="member_purchase_num">x1</div>
+                                </div>
+                                <div class="member_favorite_price">
+                                  $ 5,920 TWD
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="yc_modal" id="modal_comment">
-        <div class="yc_modal_white_wrap">
-            <form class="yc_modal_white_wrap_box" name="rate" onclick="sendComment()">
-                <div class="yc_modal_delete">
-                    <i class="fas fa-times"></i>
+      <div class="yc_modal_white_wrap">
+        <form
+          class="yc_modal_white_wrap_box"
+          name="rate"
+          onclick="sendComment()"
+        >
+          <div class="yc_modal_delete">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="yc_modal_title">
+            <div class="yc_modal_title_img">
+              <img id="yc_modal_img" src="" alt="" />
+            </div>
+            <div class="yc_modal_title_star">
+              <div class="yc_modal_title_star_bg">
+                <div class="yc_modal_title_star_fill">
+                  <i class="fas fa-star" data-index="0"></i>
+                  <i class="fas fa-star" data-index="1"></i>
+                  <i class="fas fa-star" data-index="2"></i>
+                  <i class="fas fa-star" data-index="3"></i>
+                  <i class="fas fa-star" data-index="4"></i>
+                  <input
+                    name="ratedIndex"
+                    type="hidden"
+                    id="ratedIndex"
+                    value=""
+                  />
                 </div>
-                <div class="yc_modal_title">
-                    <div class="yc_modal_title_img">
-                        <img id="yc_modal_img" src="" alt="">
-                    </div>
-                    <div class="yc_modal_title_star">
-                        <div class="yc_modal_title_star_bg">
-                            <div class="yc_modal_title_star_fill">
-                                <i class="fas fa-star" data-index="0"></i>
-                                <i class="fas fa-star" data-index="1"></i>
-                                <i class="fas fa-star" data-index="2"></i>
-                                <i class="fas fa-star" data-index="3"></i>
-                                <i class="fas fa-star" data-index="4"></i>
-                                <input name="ratedIndex" type="hidden" id="ratedIndex" value="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="yc_modal_content">
-                    <textarea name="rateMsg" id="" cols="30" rows="8" style="padding:1rem;"></textarea>
-                </div>
-                <div class="yc_modal_btn">
-                    <button class="btn btn-nomad submit" id="comment_submit">送出</button>
-                </div>
-            </form>
-        </div>
+              </div>
+            </div>
+          </div>
+          <div class="yc_modal_content">
+            <textarea
+              name="rateMsg"
+              id=""
+              cols="30"
+              rows="8"
+              style="padding: 1rem"
+            ></textarea>
+          </div>
+          <div class="yc_modal_btn">
+            <button class="btn btn-nomad submit" id="comment_submit">
+              送出
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <section class="fixed-section">
-        <div class="homepage-container flex">
-            <div class="fixed-functions">
-                <a href="#sec_01"><i class="fas fa-address-card fa-2x svg"></i></a>
-            </div>
-    
-            <div class="fixed-functions">
-                <a href="#sec_02"> <i class="far fa-heart  fa-2x svg"></i></a>
-            </div>
-    
-            <div class="fixed-functions">
-                <a href="#sec_03"><i class="fas fa-trophy fa-2x svg"></i></a>
-            </div>
-    
-            <div class="fixed-functions">
-                <a href="#sec_04"><i class="fas fa-history  fa-2x svg"></i></a>
-            </div>
+      <div class="homepage-container flex">
+        <div class="fixed-functions">
+          <a href="#sec_01"><i class="fas fa-address-card fa-2x svg"></i></a>
         </div>
+
+        <div class="fixed-functions">
+          <a href="#sec_02"> <i class="far fa-heart fa-2x svg"></i></a>
+        </div>
+
+        <div class="fixed-functions">
+          <a href="#sec_03"><i class="fas fa-trophy fa-2x svg"></i></a>
+        </div>
+
+        <div class="fixed-functions">
+          <a href="#sec_04"><i class="fas fa-history fa-2x svg"></i></a>
+        </div>
+      </div>
     </section>
 
     <div class="alert_body">
-        <div class="alert_popout alert_success" id="alert_success">
-            <div class="alert_wrap">
-                <div class="alert_icon"><i class="fas fa-check-circle"></i></div>
-                <div class="alert_title">註冊成功!</div>
-                <div class="alert_btn">繼續</div>
-            </div>
+      <div class="alert_popout alert_success" id="alert_success">
+        <div class="alert_wrap">
+          <div class="alert_icon"><i class="fas fa-check-circle"></i></div>
+          <div class="alert_title">註冊成功!</div>
+          <div class="alert_btn">繼續</div>
         </div>
-        <div class="alert_popout alert_error" id="alert_error">
-            <div class="alert_wrap">
-                <div class="alert_icon error_icon"><i class="fas fa-exclamation-triangle"></i></div>
-                <div class="alert_title">此email已經註冊過!</div>
-                <div class="alert_btn">再試一次</div>
-            </div>
+      </div>
+      <div class="alert_popout alert_error" id="alert_error">
+        <div class="alert_wrap">
+          <div class="alert_icon error_icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="alert_title">此email已經註冊過!</div>
+          <div class="alert_btn">再試一次</div>
         </div>
-        <div class="alert_popout alert_error_login" id="alert_error_login">
-            <div class="alert_wrap">
-                <div class="alert_icon error_icon"><i class="fas fa-exclamation-triangle"></i></div>
-                <div class="alert_title">帳號或密碼有誤!</div>
-                <div class="alert_btn">再試一次</div>
-            </div>
+      </div>
+      <div class="alert_popout alert_error_login" id="alert_error_login">
+        <div class="alert_wrap">
+          <div class="alert_icon error_icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="alert_title">帳號或密碼有誤!</div>
+          <div class="alert_btn">再試一次</div>
         </div>
+      </div>
     </div>
 
     <script src="lib/jquery-3.6.0.js"></script>
-<script src="./js/bootstrap.bundle.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="./js/nomad.js"></script>
-<script src="./js/member.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/nomad.js"></script>
+    <script src="./js/member.js"></script>
   </body>
 
   <script>
-      const mobile_re = /^09\d{2}-?\d{3}-?\d{3}$/;
-        const $mobile = $('#mobile');
+    const mobile_re = /^09\d{2}-?\d{3}-?\d{3}$/;
+    const $mobile = $("#mobile");
 
-        function triggerClick() {
-    document.querySelector('#profileImage').click();
-}
+    function triggerClick() {
+      document.querySelector("#profileImage").click();
+    }
 
-function deleteItem(event) {
-    let me = $(event.currentTarget);
-        me.closest('div').remove();
-};
+    function deleteItem(event) {
+      let me = $(event.currentTarget);
+      me.closest("div").remove();
+    }
 
-function sendComment(event) {
-    $('.alert_body').css('top', '0%');
-                $('.alert_success').addClass('alert_show');
-                $('.alert_title').text('評論已送出!');
-                $('.alert_btn').click(function() {
-                    $('.alert_body').css('top', '-100%');
-                    $('.alert_success').removeClass('alert_show');
+    function sendComment(event) {
+      $(".alert_body").css("top", "0%");
+      $(".alert_success").addClass("alert_show");
+      $(".alert_title").text("評論已送出!");
+      $(".alert_btn").click(function () {
+        $(".alert_body").css("top", "-100%");
+        $(".alert_success").removeClass("alert_show");
 
-                    // $('.member_commnet_btn_wrap').remove();
+        // $('.member_commnet_btn_wrap').remove();
 
-                    if (window.clickedCommentBtn) {
-                        window.clickedCommentBtn.closest('.member_commnet_btn_wrap').remove();
-                    }
-                    // $(this).find(".subclass").css("visibility","visible");
-                    // window.location.reload();
-                });
-}
+        if (window.clickedCommentBtn) {
+          window.clickedCommentBtn.closest(".member_commnet_btn_wrap").remove();
+        }
+        // $(this).find(".subclass").css("visibility","visible");
+        // window.location.reload();
+      });
+    }
   </script>
 </html>
