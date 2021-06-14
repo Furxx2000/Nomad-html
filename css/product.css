@@ -1,7 +1,3 @@
-* {
-  /* outline: 1px solid red; */
-}
-
 .picture {
   background-image: url(../images/luca-bravo-ESkw2ayO2As-unsplash-scaled-e1588963358919@2x.png);
   width: 100%;
@@ -32,6 +28,15 @@ h3 {
   width: 50%;
   margin: 20px 0;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .product_all {
@@ -104,7 +109,6 @@ h3 {
 .love1:active {
   transform: scale(0.8) !important;
 }
-
 .fill {
   fill: #a75353;
 }
@@ -180,10 +184,6 @@ section.pagination-section div.container {
 section.pagination-section ul.pagination {
   flex: 0 1 auto;
   justify-content: center;
-}
-
-section.pagination-section li.arrow {
-  flex: 0 1 auto;
 }
 
 section.pagination-section ul.pagination li {
@@ -281,7 +281,7 @@ section.pagination-section svg {
     margin: 0 auto;
   }
 
-  h1.title {
+  h1 {
     display: block;
     text-align: center;
     width: fit-content;
