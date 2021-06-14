@@ -51,6 +51,7 @@ if (!empty($_SESSION['user'])) {
 
 <body>
     <?php include __DIR__ . '/parts-php/html-navbar.php'; ?>
+
     <div class="webmodal"></div>
     <div class="notice-modal">
         <div class="container">
@@ -370,24 +371,6 @@ if (!empty($_SESSION['user'])) {
             }
         }, 'json');
     }
-
-
-
-
-
-
-
-    // let heart= $('.mob_svg svg');
-
-    // $('.mob_svg').on('click', 'svg', function(){
-    //     $(this).toggleClass('open');
-    // });
-
-    // let webheart= $('.svg svg');
-
-    // $('.svg').on('click', 'svg', function(){
-    //     $(this).toggleClass('open');
-    // });
 
     $(".close").on("click", function() {
         $(".close, .wrapper").removeClass("active");
