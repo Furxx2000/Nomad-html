@@ -57,10 +57,18 @@ WHERE o.`member_sid`=$m_id ";
     $stmt = $pdo->query($sql);
     $rows = $stmt->fetchAll();
 
-$count_sql = "SELECT COUNT(*) FROM `order_details` WHERE member_sid = $m_id and schedule_sid > 1";
+$count_sql = "SELECT COUNT(*) FROM `order_details` WHERE member_sid = $m_id and schedule_sid >= 1";
 $count_stmt = $pdo->query($count_sql);
 $count = $count_stmt->fetchColumn();
 
+$pur_last_sql = "SELECT * FROM `orders` JOIN `order_details` ON orders.member_sid = $m_id AND orders.sid = order_details.order_sid JOIN `schedule` ON order_details.schedule_sid = schedule.sid ORDER BY orders.order_date DESC LIMIT 0 , 1"; 
+
+$purchase_last = $pdo->query($pur_last_sql)->fetch();
+
+$pur_last02_sql = "SELECT * FROM `orders` JOIN `order_details` ON orders.member_sid = $m_id AND orders.sid = order_details.order_sid JOIN `schedule` ON order_details.schedule_sid = schedule.sid ORDER BY orders.order_date DESC LIMIT 1 , 2"; 
+
+$purchase_last02 = $pdo->query($pur_last02_sql)->fetch();
+$achievement = 6 * $count;
 
 ?>
 <?php include __DIR__.'/parts-php/member-header.php' ?>
@@ -305,11 +313,17 @@ div.side-navbar img {
                         <div class="member_card_participate">參與行程</div>
                     </div>
                     <div class="member_card_second member_card_bg">
-                        <div class="member_card_achivement_num card_num">24</div>
+                        <div class="member_card_achivement_num card_num"><?= $achievement ?></div>
                         <div class="member_card_achivement">已解鎖成就</div>
                     </div>
                     <div class="member_card_third member_card_bg">
-                        <div class="member_card_level_num card_num">Platinum</div>
+                        <div class="member_card_level_num card_num"><?php if ($achievement < 10){
+                            echo 'Silver';
+                        }else if($achievement < 20 ){
+                        echo 'Gold';
+                        }else {
+                            echo 'Platinum';
+                        } ?></div>
                         <div class="member_card_level">個人等級</div>
                     </div>
                 </div>
@@ -533,14 +547,16 @@ div.side-navbar img {
                     </div>
                     <div class="member_content_wrap">
                         <div class="member_content_info">
+                            <?php if($count == 1 ) : ?>
                             <div class="member_achivement_card_wrap">
                                 <div class="member_achivement_card">
                                     <div class="member_achivetment_wrap_img">
-                                        <img src="images/achievement/奇萊主北4.jpg" alt="">
+                                        <img src="<?= WEB_ROOT ?>/images/<?= $purchase_last['schedule_id'] ?>/<?=$purchase_last['schedule_id'] ?>.jpeg"
+                                            alt="">
                                     </div>
                                     <div class="member_achivetment_content">
                                         <div class="member_achivetment_title">
-                                            <h5>奇萊主峰</h5>
+                                            <h5><?=$purchase_last['schedule_title']?></h5>
                                         </div>
                                         <div class="member_achivetment_bar">
                                             <div class="member_achivetment_bar_num">
@@ -570,7 +586,59 @@ div.side-navbar img {
                                                     <div class="member_achivetment_tpophy_wrap_img">
                                                         <img src="./images/achievement/ps5-silver-trophy.png" alt="">
                                                     </div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">2</div>
+                                                </div>
+                                                <div class="wrap_trophy">
+                                                    <div class="member_achivetment_tpophy_wrap_img">
+                                                        <img src="./images/achievement/ps5-bronze-trophy.png" alt="">
+                                                    </div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php elseif($count>1) : ?>
+                            <div class="member_achivement_card_wrap">
+                                <div class="member_achivement_card">
+                                    <div class="member_achivetment_wrap_img">
+                                        <img src="<?= WEB_ROOT ?>/images/<?= $purchase_last['schedule_id'] ?>/<?=$purchase_last['schedule_id'] ?>.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="member_achivetment_content">
+                                        <div class="member_achivetment_title">
+                                            <h5><?=$purchase_last['schedule_title']?></h5>
+                                        </div>
+                                        <div class="member_achivetment_bar">
+                                            <div class="member_achivetment_bar_num">
+                                                <h5>100%</h5>
+                                            </div>
+                                            <div class="member_achivetment_bar_line">
+                                                <div class="member_achivetment_bar_bg">
+                                                    <div class="member_achivetment_bar_progress bar_01"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="member_achivetment_tpophy">
+                                            <div class="member_achivetment_tpophy_wrap">
+                                                <div class="wrap_trophy">
+                                                    <div class="member_achivetment_tpophy_wrap_img">
+                                                        <img src="./images/achievement/ps5-platinum-trophy.png" alt="">
+                                                    </div>
                                                     <div class="member_achivetment_tpophy_wrap_num">1</div>
+                                                </div>
+                                                <div class="wrap_trophy">
+                                                    <div class="member_achivetment_tpophy_wrap_img">
+                                                        <img src="./images/achievement/ps5-gold-trophy.png" alt="">
+                                                    </div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">1</div>
+                                                </div>
+                                                <div class="wrap_trophy">
+                                                    <div class="member_achivetment_tpophy_wrap_img">
+                                                        <img src="./images/achievement/ps5-silver-trophy.png" alt="">
+                                                    </div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">2</div>
                                                 </div>
                                                 <div class="wrap_trophy">
                                                     <div class="member_achivetment_tpophy_wrap_img">
@@ -586,15 +654,16 @@ div.side-navbar img {
                             <div class="member_achivement_card_wrap">
                                 <div class="member_achivement_card">
                                     <div class="member_achivetment_wrap_img">
-                                        <img src="images/achievement/武陵四秀_1.jpg" alt="">
+                                        <img src="<?= WEB_ROOT ?>/images/<?= $purchase_last02['schedule_id'] ?>/<?=$purchase_last02['schedule_id'] ?>.jpeg"
+                                            alt="">
                                     </div>
                                     <div class="member_achivetment_content">
                                         <div class="member_achivetment_title">
-                                            <h5>武陵四秀</h5>
+                                            <h5><?=$purchase_last02['schedule_title']?></h5>
                                         </div>
                                         <div class="member_achivetment_bar">
                                             <div class="member_achivetment_bar_num">
-                                                <h5>60%</h5>
+                                                <h5>100%</h5>
                                             </div>
                                             <div class="member_achivetment_bar_line">
                                                 <div class="member_achivetment_bar_bg">
@@ -608,19 +677,19 @@ div.side-navbar img {
                                                     <div class="member_achivetment_tpophy_wrap_img">
                                                         <img src="./images/achievement/ps5-platinum-trophy.png" alt="">
                                                     </div>
-                                                    <div class="member_achivetment_tpophy_wrap_num">0</div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">1</div>
                                                 </div>
                                                 <div class="wrap_trophy">
                                                     <div class="member_achivetment_tpophy_wrap_img">
                                                         <img src="./images/achievement/ps5-gold-trophy.png" alt="">
                                                     </div>
-                                                    <div class="member_achivetment_tpophy_wrap_num">0</div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">1</div>
                                                 </div>
                                                 <div class="wrap_trophy">
                                                     <div class="member_achivetment_tpophy_wrap_img">
                                                         <img src="./images/achievement/ps5-silver-trophy.png" alt="">
                                                     </div>
-                                                    <div class="member_achivetment_tpophy_wrap_num">1</div>
+                                                    <div class="member_achivetment_tpophy_wrap_num">2</div>
                                                 </div>
                                                 <div class="wrap_trophy">
                                                     <div class="member_achivetment_tpophy_wrap_img">
@@ -633,11 +702,16 @@ div.side-navbar img {
                                     </div>
                                 </div>
                             </div>
+                            <?php else: ?>
+                            <?php endif; ?>
                         </div>
                     </div>
+                    <?php if($count >= 1 ) : ?>
                     <a href="achievement.php">
                         <div class="member_content_btn"><button class="btn btn-nomad2">我的成就</button></div>
                     </a>
+                    <?php else: ?>
+                    <?php endif; ?>
                 </div>
 
             </div>
@@ -705,7 +779,7 @@ div.side-navbar img {
                                                     <div class="member_purchase_time">
                                                         <?= date("Y/m/d", strtotime($b['order_date'])) ?></div>
                                                     <div class="member_purchase_productnum">
-                                                        商品編號:<span>45612357<?= $b['order_sid'] ?></sapn>
+                                                        商品編號:<span>45612357<?= $b['order_sid'] ?></span>
                                                     </div>
                                                 </div>
                                                 <div
@@ -800,8 +874,6 @@ div.side-navbar img {
         </form>
     </div>
 </div>
-
-
 
 <section class="fixed-section">
     <div class="homepage-container flex">
