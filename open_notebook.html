@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/open_notebook.css" />
+    <link rel="stylesheet" href="./css/nomadHomePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>open_notebook</title>
+  </head>
+  <body>
+    <div class="side-navbar none">
+      <div class="outer-box">
+        <div class="icon-arrow-up hide">
+          <svg class="icon-arrow-up svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-up"></use>
+          </svg>
+        </div>
+        <div class="side-navbar-flex flex">
+          <div class="homepage-container">
+            <div class="side-navbar-item">
+              <a href="./level_new.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/level_white.svg" alt="" />
+                  <p class="text ff-noto">難度分級</p>
+                </div>
+              </a>
+              <a href="./notebook.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/blog.svg" alt="" />
+                  <p class="text ff-noto">登山記事</p>
+                </div>
+              </a>
+              <a href="./note.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/notice.svg" alt="" />
+                  <p class="text ff-noto">登山須知</p>
+                </div>
+              </a>
+              <a href="./weather.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/weather.svg" alt="" />
+                  <p class="text ff-noto">天氣</p>
+                </div>
+              </a>
+              <a href="./product.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/product.svg" alt="" />
+                  <p class="text ff-noto">商品</p>
+                </div>
+              </a>
+
+              <a href="./achievement.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/achivement.svg" alt="" />
+                  <p class="text ff-noto">成就紀錄</p>
+                </div>
+              </a>
+              <a href="./activity-list.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/schedule.svg" alt="" />
+                  <p class="text ff-noto">行程</p>
+                </div>
+              </a>
+              <a href="./info.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/about_us.svg" alt="" />
+                  <p class="text ff-noto">官方資訊</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="icon-arrow-down">
+          <svg class="icon-arrow-down svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-navbar">
+      <div class="homepage-container flex">
+        <div class="navbar-left">
+          <a href="./nomadHomePage.html">
+            <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right flex">
+          <a href="./shopping-cart-1.html">
+            <div class="cart none">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">2</span>
+            </div>
+          </a>
+          <div class="user-icon flex none">
+            <div class="left-box">
+              <div class="user-account">
+                <img src="/images/User-icon/Ellipse -1.png" alt="" />
+              </div>
+
+              <!-- 新增dropdown選單 -->
+              <div class="dropDown-box">
+                <ul>
+                  <a href="./member.html">
+                    <li>
+                      <svg class="icon-profile svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-profile"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">帳號資訊</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_02">
+                    <li>
+                      <svg class="icon-heart svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-heart"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">我的最愛</span>
+                    </li>
+                  </a>
+                  <a href="./achievement.html">
+                    <li>
+                      <svg class="icon-trophy svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-trophy"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">成就紀錄</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_04">
+                    <li>
+                      <svg class="icon-history svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-history"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">購買紀錄</span>
+                    </li>
+                  </a>
+                  <a href="logout.html">
+                    <li class="logout">
+                      <p class="text ff-noto">登出</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger" id="mobile-cta">
+            <input type="checkbox" name="" id="check" />
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <!-- 可能使用javascript append生成 -->
+              <a href="./info.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">官方資訊</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./activity-list.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">行程</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./product.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">商品</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./achievement.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">成就紀錄</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./notebook.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山記事</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./level_new.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">難度分級</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./weather.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">天氣</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./note.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山須知</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+
+              <a href="./member.html">
+                <div class="user-account">
+                  <img src="/images/User-icon/Ellipse -1.png" alt="" />
+                </div>
+              </a>
+              <p class="userName ff-noto">Christine, &nbsp&nbsp您好</p>
+
+              <a href="nomadHomePage.html">
+                <p class="logout ff-noto">登出</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-modal"></div>
+
+    <div class="webmodal"></div>
+    <div class="notice-modal">
+      <div class="container">
+        <div class="notice-card">
+          <p class="text ff-noto">請先登入會員</p>
+          <p class="confirm-btn ff-noto">確認</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="share_dialog">
+        <h4 class="dialog_title">Share this vlog</h4>
+        <button class="close_button">
+            <svg class="close_button" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                viewBox="0 0 20 20">
+                <title>close</title>
+                <path
+                    d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                </path>
+            </svg>
+        </button>
+        <div class="link">
+            <input class="pen_url" id="linktext" value="https://www.google.com.tw/"></input>
+            <button class="copy_link" onclick="myFunction()">Copy Link</button>
+        </div>
+    </div>
+
+    <div class="background container hero-section">
+        <div class="wrapper">
+            <form action="" method="post" id="comment_form" name="form" novalidate>
+                <div class="close">
+                    <svg class="close" version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                        viewBox="0 0 20 20">
+                        <title>close</title>
+                        <path
+                            d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                        </path>
+                    </svg>
+                </div>
+                <header>
+                    <div class="profile" id="profile">
+                        <img class="profilenew" src="./images/User-icon/Ellipse -1.png" alt="">
+                    </div>
+                    <div class="ponamedate">
+                        <span class="editor" id="poname">Christine</span>
+                        <span id="podate" class="date">2021/06/21</span>
+                    </div>
+                </header>
+                <div class="sections">
+                    <section class="active">
+                        <div class="form_group">
+                            <input type="text" placeholder="Title" id="diarytitle" name="diarytitle" required>
+                            <small class="form-text error"></small>
+                        </div>
+                        <div class="images form_group">
+                            <div class="pic" type="file" name="info_image" id="info_image" required>
+                                ADD
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <textarea type="text" placeholder="Enter Description" id="text_infor" name="text_infor"
+                                required></textarea>
+                            <small class="form-text error"></small>
+                        </div>
+                    </section>
+                </div>
+                <footer>
+                    <ul>
+                        <li><span id="reset">reset</span></li>
+                        <button type="submit" class="send">Send</button>
+                    </ul>
+
+                </footer>
+            </form>
+        </div>
+
+
+        <div class="mask">
+            <div class="webclose" id="webclose" onclick="javascript:location.href='./notebook.html'">
+                <svg class="webclose" version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 20 20">
+                    <title>webclose</title>
+                    <path
+                        d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                    </path>
+                </svg>
+            </div>
+            <span class="title">登山記事</span>
+            <div class="notification"></div>
+            <button class="btn btn-primary addnote">
+                <img class="edit_note" src="./notebook-image/edit_note_black_24dp.png" alt="">
+                <div class="btn_text" id="myPopup" onclick="checkLogin()">新增話題</div>
+            </button>
+            <button class="web_edit" id="scroll_edit" onclick="checkLogin()">
+                <img class="edit_btn" src="./notebook-image/edit_note_black_24dp.png" alt="">
+            </button>
+            <div class="open_note">
+                <div class="card">
+                    <div class="card_nav">
+                        <img class="profile" src="/images/note/王淨.jpg" alt="">
+                        <span class="name_date ff-noto" id="name"> Gingle Wang</span>
+                        <span class="name_date ff-raleway" id="date">2021/06/09</span>
+                    </div>
+                    <div class="info_img">
+                        <img src="/images/note/Gingle_玉山前峰_登山記事.JPG" alt="">
+                    </div>
+                    <div class="info_title">
+                        <span class="ff-noto">玉山前峰三日遊</span>
+                        <div class="svg1">
+                            <svg class="share_link" version="1.1" xmlns="http://www.w3.org/2000/svg" width="23"
+                                height="23" viewBox="0 0 512 512">
+                                <title></title>
+                                <g id="icomoon-ignore">
+                                </g>
+                                <path
+                                    d="M432 352c-22.58 0-42.96 9.369-57.506 24.415l-215.502-107.751c0.657-4.126 1.008-8.353 1.008-12.664s-0.351-8.538-1.008-12.663l215.502-107.751c14.546 15.045 34.926 24.414 57.506 24.414 44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80c0 4.311 0.352 8.538 1.008 12.663l-215.502 107.752c-14.546-15.045-34.926-24.415-57.506-24.415-44.183 0-80 35.818-80 80 0 44.184 35.817 80 80 80 22.58 0 42.96-9.369 57.506-24.414l215.502 107.751c-0.656 4.125-1.008 8.352-1.008 12.663 0 44.184 35.817 80 80 80s80-35.816 80-80c0-44.182-35.817-80-80-80z">
+                                </path>
+                            </svg>
+                            <div class="webheart" onclick="onHeartclick(event)">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="25"
+                                    viewBox="0 0 512 512">
+                                    <title></title>
+                                    <g id="icomoon-ignore"></g>
+                                    <path
+                                        d="M377.594 32c-53.815 0-100.129 43.777-121.582 89.5-21.469-45.722-67.789-89.5-121.608-89.5-74.191 0-134.404 60.22-134.404 134.416 0 150.923 152.25 190.497 256.011 339.709 98.077-148.288 255.989-193.603 255.989-339.709 0-74.196-60.215-134.416-134.406-134.416z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail_text">
+                            <p>
+                                玉山前峰。
+H3,239M，在台灣的百岳裡，排名第65名（依照高度順序）。
+從塔塔加登山口出發，走到玉山前峰的登山口，單趟只有短短的兩公里多，沿途幾乎都只有緩上，而從前峰的登山口到達玉山前峰山頂，也僅需要走短短的８００公尺，聽起來，超簡單的！是不是？！ヾ(*´∇`)ﾉ
+再從上河的時程估計圖來看，雖然只有短短的八百公尺路程，可是上山卻需要75分鐘，下山需要45分鐘呢！也就是來回差不多也要2小時啊！（我不聽我不聽！！）
+這天，我們隊伍總共四個人，而其實我們計畫的行程是玉山主峰單攻，只是我之前已經單攻過主峰了，所以這天只有陪隊友走到圓峰、主峰叉路口，就一個人先下山、去單攻前峰了（當行前體訓的概念，自行加碼行程....XD）。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mob_card">
+            <div class="mobclose_note">
+                <svg class="mobclose_note" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20" onclick="javascript:location.href='./notebook.php'">
+                    <title>mobclose_note</title>
+                    <path
+                        d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                    </path>
+                </svg>
+            </div>
+            <div class="card_nav">
+                <img class="profile" src="/images/note/王淨.jpg" alt="">
+                <span class="name_date ff-noto" id="name"> Gingle Wang</span>
+                <span class="name_date ff-raleway" id="date">2021/06/09</span>
+            </div>
+            <div class="mob_svg">
+                <svg class="share_link" version="1.1" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                    viewBox="0 0 512 512">
+                    <title></title>
+                    <g id="icomoon-ignore">
+                    </g>
+                    <path
+                        d="M432 352c-22.58 0-42.96 9.369-57.506 24.415l-215.502-107.751c0.657-4.126 1.008-8.353 1.008-12.664s-0.351-8.538-1.008-12.663l215.502-107.751c14.546 15.045 34.926 24.414 57.506 24.414 44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80c0 4.311 0.352 8.538 1.008 12.663l-215.502 107.752c-14.546-15.045-34.926-24.415-57.506-24.415-44.183 0-80 35.818-80 80 0 44.184 35.817 80 80 80 22.58 0 42.96-9.369 57.506-24.414l215.502 107.751c-0.656 4.125-1.008 8.352-1.008 12.663 0 44.184 35.817 80 80 80s80-35.816 80-80c0-44.182-35.817-80-80-80z">
+                    </path>
+                </svg>
+                <div class="heart" onclick="onMoHeartclick(event)">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 512 512">
+                        <title></title>
+                        <g id="icomoon-ignore">
+                        </g>
+                        <path
+                            d="M377.594 32c-53.815 0-100.129 43.777-121.582 89.5-21.469-45.722-67.789-89.5-121.608-89.5-74.191 0-134.404 60.22-134.404 134.416 0 150.923 152.25 190.497 256.011 339.709 98.077-148.288 255.989-193.603 255.989-339.709 0-74.196-60.215-134.416-134.406-134.416z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mobinfo_image">
+                <img src="/images/note/Gingle_玉山前峰_登山記事.JPG" alt="">
+            </div>
+            <div class="mobinfo_title">玉山前峰三日遊</div>
+            <div class="mobdetail_info">
+                <p>
+                    玉山前峰。
+H3,239M，在台灣的百岳裡，排名第65名（依照高度順序）。
+從塔塔加登山口出發，走到玉山前峰的登山口，單趟只有短短的兩公里多，沿途幾乎都只有緩上，而從前峰的登山口到達玉山前峰山頂，也僅需要走短短的８００公尺，聽起來，超簡單的！是不是？！ヾ(*´∇`)ﾉ
+再從上河的時程估計圖來看，雖然只有短短的八百公尺路程，可是上山卻需要75分鐘，下山需要45分鐘呢！也就是來回差不多也要2小時啊！（我不聽我不聽！！）
+這天，我們隊伍總共四個人，而其實我們計畫的行程是玉山主峰單攻，只是我之前已經單攻過主峰了，所以這天只有陪隊友走到圓峰、主峰叉路口，就一個人先下山、去單攻前峰了（當行前體訓的概念，自行加碼行程....XD）。
+                </p>
+            </div>
+            <button id="edit" onclick="checkLogin()">
+                <img class="edit_btn" src="./notebook-image/edit_note_black_24dp.png" alt="">
+            </button>
+            <div class="notification"></div>
+        </div>
+    </div>
+
+    <section class="footer-section"></section>
+
+    <div class="spaceForFixed-mobile"></div>
+
+    <section class="fixed-section">
+        <div class="homepage-container flex">
+          <a href="./nomadHomePage.html">
+            <div class="fixed-functions">
+              <svg class="icon-homepage svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-homepage"></use>
+              </svg>
+            </div>
+          </a>
+  
+          <a href="./member.html#sec_02">
+            <div class="fixed-functions">
+              <svg class="icon-heart svg">
+                <use
+                  xlink:href="./icomoon/symbol-defs.svg#icon-heart-border"
+                ></use>
+              </svg>
+            </div>
+          </a>
+  
+          <a href="./shopping-cart-1.html">
+            <div class="fixed-functions">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">2</span>
+            </div>
+          </a>
+  
+          <a href="./member.html">
+            <div class="fixed-functions">
+              <svg class="icon-user svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/nomad.js"></script>
+
+    <script>
+        const noticeModal = document.querySelector('.notice-modal');
+    const confirmBtn = document.querySelector('.notice-modal .confirm-btn');
+    const noticeCard = document.querySelector('.notice-modal .notice-card');
+    // const wrapper=document.querySelector('.wrapper');
+
+    confirmBtn.addEventListener('click', () => {
+        noticeModal.classList.remove('open');
+        noticeCard.classList.remove('open');
+        setTimeout(() => {
+            location.href = 'signUp.php#form2';
+        }, 500)
+    })
+
+    function checkLogin() {
+        $(".wrapper").addClass("active");
+        $("body").css('overflow-y', 'hidden');
+        $('.webmodal').addClass("active");
+    }
+
+    const onHeartclick = function(e) {
+        
+        const webheart = $(e.currentTarget);
+            webheart.toggleClass('fill');
+    }
+
+    const onMoHeartclick = function(e) {
+
+        const heart = $(e.currentTarget);
+            heart.toggleClass('fill');
+    }
+
+    $(".close").on("click", function() {
+        $(".close, .wrapper").removeClass("active");
+        $("body").css('overflow-y', 'auto');
+        $('.webmodal').removeClass("active");
+    });
+
+    const shareDialog = document.querySelector('.share_dialog');
+    const closeButton = document.querySelector('.close_button');
+    const share_links = document.querySelectorAll('.share_link');
+    share_links.forEach(share_link => {
+        share_link.addEventListener('click', event => {
+            if (navigator.share) {
+                navigator.share({
+                        title: 'WebShare API Demo',
+                        url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+                    }).then(() => {
+                        console.log('Thanks for sharing!');
+                    })
+                    .catch(console.error);
+            } else {
+                shareDialog.classList.add('is-open');
+            }
+        });
+    });
+
+    closeButton.addEventListener('click', event => {
+        shareDialog.classList.remove('is-open');
+    });
+
+    $(".share_link").on("click", function() {
+        $("body").css("overflow-y", 'hidden');
+        $('.webmodal').addClass("active");
+    });
+
+    $(".close_button").on("click", function() {
+        $("body").css('overflow-y', 'auto');
+        $('.webmodal').removeClass("active");
+    })
+
+    function myFunction() {
+        var copyText = document.getElementById("linktext");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+
+        // alert("Copied the link:" + copyText.value);
+    }
+
+    let mybutton = document.getElementById("scroll_edit");
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+
+
+    const $diarytitle = $('#diarytitle'),
+        $text_infor = $('#text_infor');
+    const fields = [$diarytitle, $text_infor];
+
+    function checkForm() {
+
+        fields.forEach(al => {
+            al.next().text('');
+        });
+
+        let isPass = true;
+
+        if ($diarytitle.val().length < 1) {
+            isPass = false;
+            $diarytitle.css('border', '1px solid red');
+            $diarytitle.next().text('');
+        }
+
+        if ($diarytitle.val().length > 11) {
+            isPass = false;
+            $diarytitle.css('border', '1px solid red');
+            $diarytitle.next().text('');
+            $text_infor.next().text('Title 太長了');
+        }
+
+
+        if ($text_infor.val().length > 900) {
+            isPass = false;
+            $text_infor.css('border', '1px solid red');
+            $text_infor.next().text('Description不符合格式');
+        }
+        if ($text_infor.val().length < 30) {
+            isPass = false;
+            $text_infor.css('border', '1px solid red');
+            $text_infor.next().text('Description太短了～');
+        }
+        if (window.file_field && window.file_field.files)
+            console.log('window.file_field.files[0]', window.file_field.files[0]);
+
+        if (isPass) {
+                location.href = "http://localhost/nomad/notebook.html";
+        }
+    }
+
+    (function($) {
+        $(document).ready(function() {
+
+            uploadImage()
+            resetButton()
+
+            function uploadImage() {
+                var button = $('.images .pic')
+                var uploader = $('<input type="file" name="info_image" id="info_image" accept="image/*" />')
+                var images = $('.images')
+
+                button.on('click', function() {
+                    uploader.click()
+                })
+
+                uploader.on('change', function() {
+                    var reader = new FileReader()
+                    reader.onload = function(event) {
+                        images.prepend('<div class="img" style="background-image: url(\'' +
+                            event.target.result + '\');" rel="' + event.target.result +
+                            '"><span>remove</span></div>')
+                    }
+                    window.file_field = uploader[0];
+                    reader.readAsDataURL(uploader[0].files[0])
+                    images.show();
+                    button.hide();
+                })
+
+                images.on('click', '.img', function() {
+                    $(this).hide()
+                    button.show();
+                })
+            }
+
+            function resetButton() {
+                var resetbtn = $('#reset')
+                resetbtn.on('click', function() {
+                    reset()
+                })
+            }
+
+            function reset() {
+                $('#diarytitle').val('')
+                var topic = $('#topic').val('')
+                var text_infor = $('#text_infor').val('')
+                var section = $('.sections').val('')
+            }
+        })
+    })(jQuery)
+    </script>
+  </body>
+</html>
