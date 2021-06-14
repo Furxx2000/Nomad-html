@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-detail</title>
+    <link rel="stylesheet" href="./css/product-detail.css" />
+    <link rel="stylesheet" href="./css/nomadHomePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <body>
+    <div class="side-navbar none">
+      <div class="outer-box">
+        <div class="icon-arrow-up hide">
+          <svg class="icon-arrow-up svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-up"></use>
+          </svg>
+        </div>
+        <div class="side-navbar-flex flex">
+          <div class="homepage-container">
+            <div class="side-navbar-item">
+              <a href="./level_new.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/level_white.svg" alt="" />
+                  <p class="text ff-noto">難度分級</p>
+                </div>
+              </a>
+              <a href="./notebook.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/blog.svg" alt="" />
+                  <p class="text ff-noto">登山記事</p>
+                </div>
+              </a>
+              <a href="./note.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/notice.svg" alt="" />
+                  <p class="text ff-noto">登山須知</p>
+                </div>
+              </a>
+              <a href="./weather.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/weather.svg" alt="" />
+                  <p class="text ff-noto">天氣</p>
+                </div>
+              </a>
+              <a href="./product.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/product.svg" alt="" />
+                  <p class="text ff-noto">商品</p>
+                </div>
+              </a>
+
+              <a href="./achievement.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/achivement.svg" alt="" />
+                  <p class="text ff-noto">成就紀錄</p>
+                </div>
+              </a>
+              <a href="./activity-list.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/schedule.svg" alt="" />
+                  <p class="text ff-noto">行程</p>
+                </div>
+              </a>
+              <a href="./info.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/about_us.svg" alt="" />
+                  <p class="text ff-noto">官方資訊</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="icon-arrow-down">
+          <svg class="icon-arrow-down svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-navbar">
+      <div class="homepage-container flex">
+        <div class="navbar-left">
+          <a href="./nomadHomePage.html">
+            <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right flex">
+          <a href="./shopping-cart-1.html">
+            <div class="cart none">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">2</span>
+            </div>
+          </a>
+          <div class="user-icon flex none">
+            <div class="left-box">
+              <div class="user-account">
+                <img src="/images/User-icon/Ellipse -1.png" alt="" />
+              </div>
+
+              <!-- 新增dropdown選單 -->
+              <div class="dropDown-box">
+                <ul>
+                  <a href="./member.html">
+                    <li>
+                      <svg class="icon-profile svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-profile"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">帳號資訊</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_02">
+                    <li>
+                      <svg class="icon-heart svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-heart"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">我的最愛</span>
+                    </li>
+                  </a>
+                  <a href="./achievement.html">
+                    <li>
+                      <svg class="icon-trophy svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-trophy"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">成就紀錄</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_04">
+                    <li>
+                      <svg class="icon-history svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-history"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">購買紀錄</span>
+                    </li>
+                  </a>
+                  <a href="logout.html">
+                    <li class="logout">
+                      <p class="text ff-noto">登出</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger" id="mobile-cta">
+            <input type="checkbox" name="" id="check" />
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <!-- 可能使用javascript append生成 -->
+              <a href="./info.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">官方資訊</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./activity-list.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">行程</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./product.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">商品</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./achievement.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">成就紀錄</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./notebook.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山記事</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./level_new.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">難度分級</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./weather.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">天氣</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./note.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山須知</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+
+              <a href="./member.html">
+                <div class="user-account">
+                  <img src="/images/User-icon/Ellipse -1.png" alt="" />
+                </div>
+              </a>
+              <p class="userName ff-noto">Christine, &nbsp&nbsp您好</p>
+
+              <a href="nomadHomePage.html">
+                <p class="logout ff-noto">登出</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-modal"></div>
+
+    <div class="product_background hero-section">
+      <div class="logo"></div>
+    </div>
+
+    <!-- 已成功加入購物車的光箱 -->
+    <div class="modalCart">
+      <div class="modalCart-container">
+        <div class="modalCart-inner">
+          <div class="success-icon-cart">
+            <svg class="icon-done svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-done"></use>
+            </svg>
+          </div>
+          <p>已成功加入購物車</p>
+          <button class="modalCart-close" type="button">確認</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PC版篩選 -->
+    <section class="product_detail">
+      <div class="product1">
+        <div class="product_solid">
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">全部</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">登山包</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">登山杖</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">水壺</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">登山帽/頭巾</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">頭燈</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">睡袋/睡墊</p>
+          </a>
+          <a class="filter_product" href="product.html">
+            <p class="ff-noto">專業儀器</p>
+          </a>
+        </div>
+
+        <!-- 產品大圖 -->
+
+        <div class="product_picture">
+          <img src="/mountain-bag/PA001.jpg" alt="" />
+        </div>
+
+        <div class="small_product_picture">
+          <div class="small_picture">
+            <div class="small_photo">
+              <img src="/mountain-bag/small/PA001.jpg" alt="" />
+              <div class="small_photo_circle"></div>
+            </div>
+            <div class="small_photo">
+              <img src="/mountain-bag/small/small2/PA001.jpg" alt="" />
+              <div class="small_photo_circle"></div>
+            </div>
+            <div class="small_photo">
+              <img src="/mountain-bag/small/small3/PA001.jpg" alt="" />
+              <div class="small_photo_circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 手機版介面 -->
+      <div class="product_title">
+        <div class="group">
+          <h3 class="ff-noto">【KELTY】REDWING 50L 背包 藍</h3>
+          <div class="love" onclick="onLove2Click(event)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.826 16.043">
+              <g id="Path_3235" data-name="Path 3235">
+                <path
+                  d="M8.913,16.043C4.12,12.84,1.607,9.926.576,7.487-2.185.951,5.7-2.175,8.913,1.683c3.211-3.858,11.1-.733,8.337,5.8C16.219,9.926,13.705,12.84,8.913,16.043Z"
+                  stroke="none"
+                />
+                <path
+                  d="M 8.912861824035645 13.6129732131958 C 13.11207485198975 10.61418914794922 14.76550579071045 8.226569175720215 15.40713310241699 6.708418846130371 C 15.79754257202148 5.784328460693359 16.1123218536377 4.455648422241211 15.3947925567627 3.373558759689331 C 14.84150314331055 2.539158582687378 13.75980281829834 1.999998688697815 12.6390323638916 1.999998688697815 C 12.12072277069092 1.999998688697815 11.14714241027832 2.125058650970459 10.45024299621582 2.962588548660278 L 8.912872314453125 4.810168743133545 L 7.375492572784424 2.962588548660278 C 6.678572654724121 2.125058650970459 5.704992771148682 1.999998688697815 5.18668270111084 1.999998688697815 C 4.066082954406738 1.999998688697815 2.984452724456787 2.539208650588989 2.431102752685547 3.373698711395264 C 1.713512778282166 4.455868721008301 2.028222799301147 5.784448623657227 2.418502807617188 6.708188533782959 C 3.060213088989258 8.226551055908203 4.713642120361328 10.61418724060059 8.912861824035645 13.6129732131958 M 8.912862777709961 16.04314804077148 C 4.12047290802002 12.83985900878906 1.607052803039551 9.925718307495117 0.5762727856636047 7.486778736114502 C -1.359121561050415 2.905857801437378 1.936605215072632 -1.269226117983635e-06 5.186685562133789 -1.269226117983635e-06 C 6.573835372924805 -1.269226117983635e-06 7.95247745513916 0.5291657447814941 8.912862777709961 1.683338642120361 C 9.873048782348633 0.5294012427330017 11.25217247009277 -1.269226117983635e-06 12.63903617858887 -1.269226117983635e-06 C 15.88939094543457 -1.269226117983635e-06 19.18501472473145 2.905458927154541 17.24945259094238 7.486778736114502 C 16.21866226196289 9.925718307495117 13.70524311065674 12.83985900878906 8.912862777709961 16.04314804077148 Z"
+                  stroke="none"
+                  fill="#a75353"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="product_price">
+          <h3 class="ff-noto">$ 4,950 TWD</h3>
+        </div>
+        <div class="product_size ff-noto">
+          背長：39 ~ 53 cm<br />
+          尺寸：66 x 41 x 30 cm<br />
+          容量：50 L<br />
+          重量：1660 g<br />
+          主體材質 : Poly 420D Small Back Stafford<br />
+        </div>
+      </div>
+
+      <div class="product_intro">
+        <div class="product_content ff-noto">
+          •Kelty Redwing
+          50現在配備了AMP-Flow通風背板，可幫助您緩解寒冷與悶熱。<br />
+          •加上FIT-Pro背長自我調節系統，可在背包上肩的狀況下即時自行快速調整背長，以符合大多數人的身形。
+        </div>
+      </div>
+    </section>
+
+    <!-- PC版的其他相關產品 -->
+    <div class="other_message">
+      <div class="border"></div>
+      <div class="other_people ff-noto">其他人也看了...</div>
+    </div>
+
+    <section class="product_detail">
+      <div class="product2">
+        <div class="other">
+          <div class="other_message1">
+            <div class="border"></div>
+            <div class="other_people ff-noto">其他人也看了...</div>
+          </div>
+
+          <div class="other_product_info">
+            <div class="product_name1">
+              <img src="/mountain-bag/small/PA015.jpg" alt="" />
+            </div>
+            <div class="pro">
+              <p class="ff-noto">
+                【Mammut 】動態脊柱技術款健行背包 女 花崗岩灰 50-60L Ducan Spine
+                00380<br />
+                $ 9,720 TWD
+              </p>
+            </div>
+          </div>
+
+          <div class="other_product_info">
+            <div class="product_name1">
+              <img src="/mountain-bag/small/PD003.jpg" alt="" />
+            </div>
+            <div class="pro">
+              <p class="ff-noto">
+                【OD】網布棒球帽/防曬登山帽 1118516<br />
+                $ 765 TWD
+              </p>
+            </div>
+          </div>
+
+          <div class="other_product_info">
+            <div class="product_name1">
+              <img src="/mountain-bag/small/PA003.jpg" alt="" />
+            </div>
+            <div class="pro">
+              <p class="ff-noto">
+                【QUECHUA】30L 多隔層休閒健行背包<br />
+                $ 649 TWD
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product_content_message">
+          <div class="product_intro_PC ff-noto">
+            •輕巧卻功能完整，適合 2~3 日登山健行、日常活動、旅行。<br />
+            •Kelty Redwing
+            50現在配備了AMP-Flow通風背板，可幫助您緩解寒冷與悶熱。<br />
+            •加上FIT-Pro背長自我調節系統，可在背包上肩的狀況下即時自行快速調整背長，以符合大多數人的身形。
+          </div>
+        </div>
+
+        <!-- PC的商品數量 -->
+        <div class="product_main_name">
+          <h1 class="card-title ff-noto">【KELTY】REDWING 50L 背包 藍</h1>
+          <div class="product_size ff-noto">
+            背長：39 ~ 53 cm<br />
+            尺寸：66 x 41 x 30 cm<br />
+            容量：50 L<br />
+            重量：1660 g<br />
+            主體材質 : Poly 420D Small Back Stafford<br />
+          </div>
+          <div class="product_price_order ff-noto">$ 4,950 TWD</div>
+
+          <div class="product_count">
+            <div class="order">
+              <div class="number ff-noto">數量</div>
+              <div class="count">
+                <input
+                  class="min"
+                  name=""
+                  type="button"
+                  style="font-size: 50px"
+                  value="-"
+                />
+                <input
+                  class="num"
+                  name="num"
+                  type="text"
+                  value="1"
+                  readonly="true"
+                />
+                <input
+                  class="add"
+                  name=""
+                  style="font-size: 50px"
+                  type="button"
+                  value="+"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product_button">
+            <div class="cart_button_PC js-openCart modalCart-open">
+              <div class="cart_img add-to-cart-desktop"></div>
+            </div>
+            <div
+              class="collect_button js-open modalLIke-open"
+              onclick="onLove1Click(event)"
+            >
+              <div class="collect_img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17.826 16.043"
+                >
+                  <g id="Path_3235" data-name="Path 3235">
+                    <path
+                      d="M8.913,16.043C4.12,12.84,1.607,9.926.576,7.487-2.185.951,5.7-2.175,8.913,1.683c3.211-3.858,11.1-.733,8.337,5.8C16.219,9.926,13.705,12.84,8.913,16.043Z"
+                      stroke="none"
+                    />
+                    <path
+                      d="M 8.912861824035645 13.6129732131958 C 13.11207485198975 10.61418914794922 14.76550579071045 8.226569175720215 15.40713310241699 6.708418846130371 C 15.79754257202148 5.784328460693359 16.1123218536377 4.455648422241211 15.3947925567627 3.373558759689331 C 14.84150314331055 2.539158582687378 13.75980281829834 1.999998688697815 12.6390323638916 1.999998688697815 C 12.12072277069092 1.999998688697815 11.14714241027832 2.125058650970459 10.45024299621582 2.962588548660278 L 8.912872314453125 4.810168743133545 L 7.375492572784424 2.962588548660278 C 6.678572654724121 2.125058650970459 5.704992771148682 1.999998688697815 5.18668270111084 1.999998688697815 C 4.066082954406738 1.999998688697815 2.984452724456787 2.539208650588989 2.431102752685547 3.373698711395264 C 1.713512778282166 4.455868721008301 2.028222799301147 5.784448623657227 2.418502807617188 6.708188533782959 C 3.060213088989258 8.226551055908203 4.713642120361328 10.61418724060059 8.912861824035645 13.6129732131958 M 8.912862777709961 16.04314804077148 C 4.12047290802002 12.83985900878906 1.607052803039551 9.925718307495117 0.5762727856636047 7.486778736114502 C -1.359121561050415 2.905857801437378 1.936605215072632 -1.269226117983635e-06 5.186685562133789 -1.269226117983635e-06 C 6.573835372924805 -1.269226117983635e-06 7.95247745513916 0.5291657447814941 8.912862777709961 1.683338642120361 C 9.873048782348633 0.5294012427330017 11.25217247009277 -1.269226117983635e-06 12.63903617858887 -1.269226117983635e-06 C 15.88939094543457 -1.269226117983635e-06 19.18501472473145 2.905458927154541 17.24945259094238 7.486778736114502 C 16.21866226196289 9.925718307495117 13.70524311065674 12.83985900878906 8.912862777709961 16.04314804077148 Z"
+                      stroke="none"
+                      fill="#a75353"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 手機版的其他相關商品 -->
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell">
+        <div class="product_name ff-noto">
+          <img src="/mountain-bag/small/PA001.jpg" alt="" />
+        </div>
+        <p class="ff-noto">【KELTY】REDWING 50L 背包 藍</p>
+        <div class="about_product_price ff-noto">$ 4,950 TWD</div>
+      </div>
+
+      <div class="carousel-cell">
+        <div class="product_name ff-noto">
+          <img src="/mountain-bag/small/PA002.jpg" alt="" />
+        </div>
+        <p class="ff-noto">【KELTY】YUKON 48升 ML 外背架登山背包 松葉綠</p>
+        <div class="about_product_price ff-noto">$ 3,800 TWD</div>
+      </div>
+
+      <div class="carousel-cell">
+        <div class="product_name ff-noto">
+          <img src="/mountain-bag/small/PA004.jpg" alt="" />
+        </div>
+        <p class="ff-noto">【FORCLAZ】30L 多隔層休閒健行背包</p>
+        <div class="about_product_price ff-noto">$ 1,999 TWD</div>
+      </div>
+    </div>
+
+    <!-- 手機版cart -->
+    <div class="cart_button">
+      <div class="cart add-to-cart-mobile js-openCart modalCart-open">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24.095 23.09"
+        >
+          <g
+            id="Icon_feather-shopping-cart"
+            data-name="Icon feather-shopping-cart"
+            transform="translate(-0.5 -0.5)"
+          >
+            <path
+              id="Path_3080"
+              data-name="Path 3080"
+              d="M14.009,31a1,1,0,1,1-1-1A1,1,0,0,1,14.009,31Z"
+              transform="translate(-3.47 -9.418)"
+              fill="none"
+              stroke="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_3081"
+              data-name="Path 3081"
+              d="M30.509,31a1,1,0,1,1-1-1A1,1,0,0,1,30.509,31Z"
+              transform="translate(-8.922 -9.418)"
+              fill="none"
+              stroke="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_3082"
+              data-name="Path 3082"
+              d="M1.5,1.5H5.517L8.209,14.948a2.009,2.009,0,0,0,2.009,1.617h9.762a2.009,2.009,0,0,0,2.009-1.617l1.607-8.426H6.522"
+              transform="translate(0 0)"
+              fill="none"
+              stroke="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+        <p>加入購物車</p>
+      </div>
+      <p class="vertical-line"></p>
+      <div class="buy ff-noto">直接購買</div>
+    </div>
+
+    <!-- 手機版直接購買裡面的card -->
+    <div class="purchase">
+      <div class="purchase_size">
+        <div class="cancel"></div>
+      </div>
+      <div class="purchase_info">
+        <div class="purchase_picture">
+          <img src="/mountain-bag/PA001.jpg" alt="" />
+        </div>
+        <div class="purchase_content">
+          <div class="purchase_price">
+            <h3 class="ff-noto">$ 4,950 TWD</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- 手機版直接購買 -->
+      <div class="purchase_product">
+        <h4 class="ff-noto">【KELTY】REDWING 50L 背包 藍</h4>
+        <!-- <p>數量</p> -->
+
+        <div class="purchase_count">
+          <div class="purchase_cal">
+            <div class="product_count">
+              <div class="order">
+                <div class="number ff-noto">數量</div>
+                <div class="count">
+                  <input class="min" name="" type="button" value="-" />
+                  <input
+                    class="num"
+                    name="num"
+                    type="text"
+                    value="1"
+                    readonly="true"
+                  />
+                  <input class="add" name="" type="button" value="+" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="./shopping-cart-1.html"
+          class="purchus_button add-to-cart-mobile-buy ff-noto"
+        >
+          直接購買
+        </a>
+      </div>
+    </div>
+
+    <section class="footer-section"></section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/nomad.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      $(".small_photo").click(function () {
+        let imgSrc = $(this).find("img").attr("src");
+        $(".product_picture img").attr("src", imgSrc);
+        console.log(imgSrc);
+      });
+
+      $(".small_photo").click(function () {
+        $(this)
+          .find(".small_photo_circle")
+          .css("border", "3px solid #F0A500")
+          .closest(".small_photo")
+          .siblings()
+          .find(".small_photo_circle")
+          .css("border", "transparent")
+          .css("transition", "0.3s");
+      });
+
+      //篩選品項字體點擊變粗
+      $(".filter_product").on("click", function () {
+        $(".filter_product").removeClass("font-weight");
+        $(this).addClass("font-weight");
+      });
+
+      // 按鈕數量的改變
+      $(function () {
+        let t = $(".num");
+        $(".add").click(function () {
+          t.val(parseInt(t.val()) + 1);
+        });
+        $(".min").click(function () {
+          if (t.val() <= 1) {
+            t.val(1);
+          } else {
+            t.val(parseInt(t.val()) - 1);
+          }
+        });
+      });
+
+      const dollarCommas = function (n) {
+        return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      };
+
+      $(function () {
+        const modal = $(".modalCart");
+        const openBtn = $(".js-openCart");
+        const closeBtn = $(".modalCart-close");
+
+        openBtn.on("click", () => {
+          console.log("hi");
+          modal.addClass("show");
+        });
+
+        closeBtn.on("click", () => {
+          modal.removeClass("show");
+        });
+      });
+
+      const onLove1Click = function (e) {
+        const modal = $(".modalLike");
+        const love1 = $(e.currentTarget);
+        love1.toggleClass("fill");
+        modal.toggleClass("show");
+      };
+
+      const onLove2Click = function (e) {
+        const love = $(e.currentTarget);
+        love.toggleClass("fill");
+      };
+
+      const purchaseBtn = document.querySelector(".buy");
+      const purchaseProduct = document.querySelector(".purchase");
+      const exit = document.querySelector(".cancel");
+
+      purchaseBtn.addEventListener("click", () => {
+        modal.classList.add("open");
+        purchaseProduct.classList.add("purchase-btn");
+      });
+
+      exit.addEventListener("click", () => {
+        modal.classList.remove("open");
+        purchaseProduct.classList.remove("purchase-btn");
+      });
+    </script>
+  </body>
+</html>
