@@ -21,23 +21,6 @@ $rows = $pdo->query($t_sql)->fetchAll();
 $rows2 = $pdo->query($m_sql)->fetchAll();
 
 
-// if(isset($_GET['area'])){
-//     $a_sql = "SELECT * FROM area WHERE s_id=" . $_GET['area'];
-
-//     $m_sql = "SELECT * FROM mountain_weather WHERE `weather_area` = ".$_GET['area'];
-//     $rows2 = $pdo->query($m_sql)->fetchAll();
-
-// }
-// else{
-//     $a_sql = "SELECT * FROM area WHERE parent_id=0";
-// }
-
-
-// echo json_encode([
-//     'totalRows' => $totalRows,
-//     'rows' => $rows,
-// ], JSON_UNESCAPED_UNICODE)
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,11 +46,7 @@ $rows2 = $pdo->query($m_sql)->fetchAll();
 <body>
     <?php include __DIR__ . '/parts-php/html-navbar.php'; ?>
 
-
-
-
     <div class="mobile_white hero-section">
-
         <div class="weather_page">
             <div class="landmark_all">
                 <div class="north north_n n_1 hsinchu_country_location">司馬庫斯
