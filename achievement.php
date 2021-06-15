@@ -431,7 +431,7 @@ $achievement = 6 * $count;
         </div>
 
     </div>
-    </div>
+
 
     <?php include __DIR__. '/parts-php/html-fixedBar.php'; ?>
     <?php include __DIR__. '/parts-php/html-footer.php'; ?>
