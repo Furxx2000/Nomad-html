@@ -18,7 +18,6 @@ $rows = $stmt->fetchAll();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./css/info.css">
     <link rel="stylesheet" href="./css/nomadHomePage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -68,8 +67,6 @@ $rows = $stmt->fetchAll();
                 <div class="rule ">
                     <div class="card1 card1-1">
                         <h2 class="title-2 title-2-1 ff-noto">最新消息</h2>
-
-
 
                         <div class="text1 ">
                             <div class="container1">
