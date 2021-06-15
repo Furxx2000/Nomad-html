@@ -1,8 +1,16 @@
 <?php include __DIR__.'/parts-php/config.php';?>
+<?php
+$title = '最新消息';
+$pageName = 'info';
+
+
+$sql = "SELECT * FROM `schedule` ORDER BY schedule.departure_date LIMIT 9";
+$stmt = $pdo->query($sql);
+$rows = $stmt->fetchAll();
 
 
 
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,90 +73,93 @@
 
                         <div class="text1 ">
                             <div class="container1">
+                                <?php foreach($rows as $s): ?>
                                 <div class="box2 ">
-                                    <img src="./img/c1.jpeg" alt="" width="100%" height="auto
+                                    <a href="activity-detail.php?sid=<?= $s['sid'] ?>">
+                                        <div class="img-box">
+                                            <img src="images/<?= $s['schedule_id'] ?>/<?= $s['schedule_id'] ?>.jpeg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <div class=" boxinfo">
+                                        <h5 class="ff-noto" style="font-weight: 400;"><?= $s['schedule_title'] ?></h5>
+                                        <p class="ff-noto" style="font-weight: 300;">六月份行程表已出爐，歡迎踴躍報名！</p>
+                                        <span><?= $s['departure_date'] ?></span>
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+                                <!-- <div class=" box2">
+                                            <img src="./img/c2.jpg" alt="" width="100%" height="auto
                                         ">
-
-                                    <div class=" boxinfo">
-                                        <h5>加里山-柳衫林</h5>
-                                        <p>六月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                        <div class=" boxinfo">
+                                            <h5>奇萊峰</h5>
+                                            <p>七月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
 
-                                </div>
-
-                                <div class="box2">
-                                    <img src="./img/c2.jpg" alt="" width="100%" height="auto
-                                        ">
-                                    <div class=" boxinfo">
-                                        <h5>奇萊峰</h5>
-                                        <p>七月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                    <div class="box2">
+                                        <img src="./img/c3.jpg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>玉山東峰</h5>
+                                            <p>八月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
 
-                                </div>
-
-                                <div class="box2">
-                                    <img src="./img/c3.jpg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>玉山東峰</h5>
-                                        <p>八月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                    <div class="box2">
+                                        <img src="./img/c4.jpeg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>雪山冬季</h5>
+                                            <p>九月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
 
-                                </div>
-
-                                <div class="box2">
-                                    <img src="./img/c4.jpeg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>雪山冬季</h5>
-                                        <p>九月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                    <div class="box2">
+                                        <img src="./img/c5.jpeg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>玉山山脈</h5>
+                                            <p>十月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
 
-                                </div>
-                                <div class="box2">
-                                    <img src="./img/c5.jpeg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>玉山山脈</h5>
-                                        <p>十月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                    <div class="box2">
+                                        <img src="./img/c6.jpeg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>天使的眼淚-嘉明湖</h5>
+                                            <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
 
-                                </div>
-                                <div class="box2">
-                                    <img src="./img/c6.jpeg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>天使的眼淚-嘉明湖</h5>
-                                        <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
+                                    <div class="box2">
+                                        <img src="./img/c7.jpeg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>雪山日出行</h5>
+                                            <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box2">
-                                    <img src="./img/c7.jpeg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>雪山日出行</h5>
-                                        <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
-                                    </div>
-                                </div>
-                                <div class="box2">
-                                    <img src="./img/c8.jpg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>合歡山</h5>
-                                        <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
-                                    </div>
-                                </div>
-                                <div class="box2">
-                                    <img src="./img/c9.jpeg" alt="" width="100%" height="auto">
-                                    <div class=" boxinfo">
-                                        <h5>武陵四秀</h5>
-                                        <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
-                                        <span>2012/06/15</span>
-                                    </div>
-                                </div>
 
+                                    <div class="box2">
+                                        <img src="./img/c8.jpg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>合歡山</h5>
+                                            <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="box2">
+                                        <img src="./img/c9.jpeg" alt="" width="100%" height="auto">
+                                        <div class=" boxinfo">
+                                            <h5>武陵四秀</h5>
+                                            <p>十一月份行程表已出爐，歡迎踴躍報名！</p>
+                                            <span>2012/06/15</span>
+                                        </div>
+                                    </div> -->
                             </div>
                             <!-- ---------------------------------------- -->
 
