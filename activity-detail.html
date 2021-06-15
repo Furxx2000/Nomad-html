@@ -286,6 +286,20 @@
 
     <div class="module-modal"></div>
 
+    <div class="modalCart">
+      <div class="modalCart-container">
+        <div class="modalCart-inner">
+          <div class="success-icon-cart">
+            <svg class="icon-done svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-done"></use>
+            </svg>
+          </div>
+          <p>已成功加入購物車</p>
+          <button class="modalCart-close" type="button">確認</button>
+        </div>
+      </div>
+    </div>
+
     <section class="hero-section">
       <div class="container">
         <div class="hero-section-background-image">
@@ -1260,6 +1274,22 @@ const mountainIntro = document.querySelector('.mountain-intro');
         $('.guide-intro-cards .card').toggleClass('none');
         $('.guides p.text').toggleClass('active');
     })
+
+    //已成功加入購物車的光箱
+    $(function() {
+            const modal = $(".modalCart");
+            const openBtn = $(".js-openCart");
+            const closeBtn = $(".modalCart-close");
+
+            openBtn.on("click", () => {
+                console.log('hi');
+                modal.addClass("show");
+            });
+
+            closeBtn.on("click", () => {
+                modal.removeClass("show");
+            });
+        });
     </script>
   </body>
 </html>
