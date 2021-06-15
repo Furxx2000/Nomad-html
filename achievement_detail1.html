@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nomadHomePage.css" />
+    <link rel="stylesheet" href="./css/achievement_detail1.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>achievement_detail</title>
+    <style>
+      .animation {
+        position: absolute;
+        z-index: -10;
+        top: -180px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        animation: pulse 3.5s;
+      }
+
+      @keyframes pulse {
+        0% {
+          background: url(./img/w6.png) no-repeat;
+        }
+
+        25% {
+          background: url(./img/w7.png) no-repeat;
+        }
+
+        50% {
+          background: url(./img/w8.png) no-repeat;
+        }
+
+        75% {
+          background: url(./img/w9.png) no-repeat;
+        }
+
+        100% {
+          background: url(./img/w10.png) no-repeat;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-navbar none">
+      <div class="outer-box">
+        <div class="icon-arrow-up hide">
+          <svg class="icon-arrow-up svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-up"></use>
+          </svg>
+        </div>
+        <div class="side-navbar-flex flex">
+          <div class="homepage-container">
+            <div class="side-navbar-item">
+              <a href="./level_new.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/level_white.svg" alt="" />
+                  <p class="text ff-noto">難度分級</p>
+                </div>
+              </a>
+              <a href="./notebook.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/blog.svg" alt="" />
+                  <p class="text ff-noto">登山記事</p>
+                </div>
+              </a>
+              <a href="./note.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/notice.svg" alt="" />
+                  <p class="text ff-noto">登山須知</p>
+                </div>
+              </a>
+              <a href="./weather.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/weather.svg" alt="" />
+                  <p class="text ff-noto">天氣</p>
+                </div>
+              </a>
+              <a href="./product.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/product.svg" alt="" />
+                  <p class="text ff-noto">商品</p>
+                </div>
+              </a>
+
+              <a href="./achievement.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/achivement.svg" alt="" />
+                  <p class="text ff-noto">成就紀錄</p>
+                </div>
+              </a>
+              <a href="./activity-list.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/schedule.svg" alt="" />
+                  <p class="text ff-noto">行程</p>
+                </div>
+              </a>
+              <a href="./info.html">
+                <div class="navbar-item">
+                  <img src="./images/navbar-icon/about_us.svg" alt="" />
+                  <p class="text ff-noto">官方資訊</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="icon-arrow-down">
+          <svg class="icon-arrow-down svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-navbar">
+      <div class="homepage-container flex">
+        <div class="navbar-left">
+          <a href="./nomadHomePage.html">
+            <img src="./icomoon/svg/icon-nomad-logo-white.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-right flex">
+          <a href="./shopping-cart-1.html">
+            <div class="cart none">
+              <svg class="icon-cart svg">
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-badge ff-airbnb">2</span>
+            </div>
+          </a>
+          <div class="user-icon flex none">
+            <div class="left-box">
+              <div class="user-account">
+                <img
+                  src="/images/note/christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+
+              <!-- 新增dropdown選單 -->
+              <div class="dropDown-box">
+                <ul>
+                  <a href="./member.html">
+                    <li>
+                      <svg class="icon-profile svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-profile"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">帳號資訊</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_02">
+                    <li>
+                      <svg class="icon-heart svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-heart"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">我的最愛</span>
+                    </li>
+                  </a>
+                  <a href="./achievement.html">
+                    <li>
+                      <svg class="icon-trophy svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-trophy"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">成就紀錄</span>
+                    </li>
+                  </a>
+                  <a href="./member.html#sec_04">
+                    <li>
+                      <svg class="icon-history svg">
+                        <use
+                          xlink:href="./icomoon/symbol-defs.svg#icon-history"
+                        ></use>
+                      </svg>
+                      <span class="text ff-noto">購買紀錄</span>
+                    </li>
+                  </a>
+                  <a href="logout.html">
+                    <li class="logout">
+                      <p class="text ff-noto">登出</p>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger" id="mobile-cta">
+            <input type="checkbox" name="" id="check" />
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <!-- 可能使用javascript append生成 -->
+              <a href="./info.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">官方資訊</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./activity-list.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">行程</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./product.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">商品</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./achievement.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">成就紀錄</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./notebook.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山記事</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./level_new.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">難度分級</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./weather.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">天氣</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="./note.html">
+                <li class="nav-item flex">
+                  <p class="ff-noto">登山須知</p>
+                  <svg class="icon-arrow-forward svg">
+                    <use
+                      xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+
+              <a href="./member.html">
+                <div class="user-account">
+                  <img
+                    src="/images/note/christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <p class="userName ff-noto">Christine, &nbsp&nbsp您好</p>
+
+              <a href="nomadHomePage.html">
+                <p class="logout ff-noto">登出</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-modal"></div>
+
+    <div class="animation"></div>
+
+    <div class="navbartop hero-section">
+      <div class="navbartop-image">
+        <div class="navbox">
+          <div class="member">
+            <img
+              src="./images/note/christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+            />
+          </div>
+
+          <div class="textbox">
+            <h1 class="title ff-noto">Christine</h1>
+            <span class="rank ff-raleway">Gold</span>
+            <div class="trophy">
+              <img src="./img/p2-gold-trophy.png" />
+            </div>
+            <span1 class="ff-noto">於2021年5月加入Nomad</span1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1 class="title ff-noto none">獎盃</h1>
+
+      <div class="cardinfobox flex">
+        <div class="imgbox">
+          <img src="./img/奇萊主北4.jpg" alt="" />
+        </div>
+        <div class="boxinfo">
+          <h4 class="title ff-noto">奇萊主峰</h4>
+          <svg class="icon-star svg">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-star"></use>
+          </svg>
+          <span class="num ff-raleway">5</span>
+          <span class="text ff-noto">(20則評價)</span>
+          <p class="text ff-noto">B級</p>
+          <p class="departure_date ff-noto">2021年6月9日-21日</p>
+          <p id="value1" class="percentage ff-raleway">100%</p>
+          <div class="bars">
+            <div class="progressBar-up"></div>
+            <div class="progressBar-down"></div>
+          </div>
+          <ul class="trophy-box flex">
+            <li>
+              <div class="img">
+                <img src="./img/p1-platinum-trophy.png" alt="" />
+              </div>
+              <span class="num ff-raleway">1</span>
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/p2-gold-trophy.png" alt="" />
+              </div>
+              <span class="num ff-raleway">1</span>
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/p3-silver-trophy.png" alt="" />
+              </div>
+              <span class="num ff-raleway">2</span>
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/p4-bronze-trophy.png" alt="" />
+              </div>
+              <span class="num ff-raleway">2</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="parentBox flex">
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/金色奇萊山.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p1-platinum-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">金色山脈</span>
+              <p class="text ff-noto">極為珍貴 8%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">取得所有獎盃</p>
+        </div>
+      </div>
+
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/黑色奇萊山.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p2-gold-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">高山之巔</span>
+              <p class="text ff-noto">非常珍貴 18%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">登頂奇萊北峰</p>
+          <p class="text ff-noto">攀登海拔 3,607公尺</p>
+        </div>
+      </div>
+
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/奇萊稜線.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p3-silver-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">稜線之美</span>
+              <p class="text ff-noto">珍貴 28%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">抵達奇萊稜線草原</p>
+          <p class="text ff-noto">攀登海拔 3,300公尺</p>
+        </div>
+      </div>
+
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/奇萊水鹿.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p3-silver-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">登山望遠</span>
+              <p class="text ff-noto">珍貴 33%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">找到奇萊長鬃山羊</p>
+          <p class="text ff-noto">攀登海拔 2,000公尺</p>
+        </div>
+      </div>
+
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/奇萊山屋.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p4-bronze-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">豪華山莊</span>
+              <p class="text ff-noto">珍貴 37%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">抵達成功山屋</p>
+          <p class="text ff-noto">攀登海拔 2,879公尺</p>
+        </div>
+      </div>
+
+      <div class="successbox col-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="success-img-box">
+          <img src="./img/奇萊登山口.jpeg" alt="" />
+        </div>
+        <div class="success-description">
+          <div class="success-flex flex">
+            <div class="success-image">
+              <img src="./img/p4-bronze-trophy.png" alt="" />
+            </div>
+            <div>
+              <span class="text ff-noto">初次見面</span>
+              <p class="text ff-noto">一般 56%</p>
+            </div>
+          </div>
+          <p class="title ff-noto">抵達奇萊山口</p>
+          <p class="text ff-noto">攀登海拔 3,150公尺</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="fixed-section">
+      <div class="homepage-container flex">
+        <a href="./nomadHomePage.html">
+          <div class="fixed-functions">
+            <svg class="icon-homepage svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-homepage"></use>
+            </svg>
+          </div>
+        </a>
+
+        <a href="./member.html#sec_02">
+          <div class="fixed-functions">
+            <svg class="icon-heart svg">
+              <use
+                xlink:href="./icomoon/symbol-defs.svg#icon-heart-border"
+              ></use>
+            </svg>
+          </div>
+        </a>
+
+        <a href="./shopping-cart-1.html">
+          <div class="fixed-functions">
+            <svg class="icon-cart svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-cart"></use>
+            </svg>
+            <span class="nav-badge ff-airbnb">2</span>
+          </div>
+        </a>
+
+        <a href="./member.html">
+          <div class="fixed-functions">
+            <svg class="icon-user svg">
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="footer-section"></section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/nomad.js"></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function increase() {
+        // 更改變量以修改數字的速度，從0增加到（ms）
+        let SPEED = 20;
+        // 百分比值
+        let limit = parseInt(document.getElementById("value1").innerHTML, 10);
+
+        for (let i = 0; i <= limit; i++) {
+          setTimeout(function () {
+            document.getElementById("value1").innerHTML = i + "%";
+          }, SPEED * i);
+        }
+      }
+
+      increase();
+    </script>
+  </body>
+</html>
