@@ -1329,6 +1329,79 @@ section.buy-now-section div.sign-up-cta:active {
   transform: scale(0.95);
 }
 
+/* ---------------------------------modalCart-mobile------------------------------------------ */
+
+div.modalCart {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.7s ease-in-out;
+  /* visibility:0.7s ease-in-out; */
+  z-index: 999;
+  /* pointer-events: none; */
+}
+
+div.modalCart.show {
+  display: block;
+}
+
+div.modalCart-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color:#333333; */
+  background: #ffffff;
+  width: 300px;
+  height: 185px;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+
+div.modalCart-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: inherit; */
+  margin-bottom: 10px;
+}
+div.modalCart-inner p {
+  margin: 15px 0;
+  color: #123132;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button.modalCart-close {
+  padding: 0.6rem 1.2rem 0.5rem 1.2rem;
+  background: #139dd7;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+div.success-icon-cart {
+  width: 50px;
+  height: 50px;
+  background-color: #f0a500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg.icon-done {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
 @media only screen and (min-width: 1420px) {
   /* ---------------------side-navbar-desktop-------------------------- */
 
@@ -2183,5 +2256,31 @@ section.buy-now-section div.sign-up-cta:active {
 
   section.buy-now-section div.buy-btns div.put-in-cart:active {
     transform: scale(0.95);
+  }
+
+  /* ------------------------------modalCart-desktop-------------------------------- */
+
+  div.success-icon-cart {
+    width: 70px;
+    height: 70px;
+    background-color: #f0a500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.modalCart-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color:#333333; */
+    background: #ffffff;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
   }
 }
