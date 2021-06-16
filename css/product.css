@@ -186,6 +186,10 @@ section.pagination-section ul.pagination {
   justify-content: center;
 }
 
+section.pagination-section li.arrow {
+  flex: 0 1 15%;
+}
+
 section.pagination-section ul.pagination li {
   color: black;
   font-size: 1.2rem;
@@ -474,6 +478,13 @@ section.pagination-section svg {
   .product_main {
     width: 300px;
     height: 300px;
+    transition: transform 1s ease;
+  }
+
+  .product_main:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
   }
 
   .product_main img {

@@ -393,10 +393,29 @@ section.footer-section {
 .product_number p {
   margin-right: 5px;
 }
-
+.min {
+  cursor: pointer;
+  color: #123132;
+}
+.min:active {
+  transform: scale(0.95);
+}
 .num {
+  width: 150px;
+  font-size: 30px;
   text-align: center;
-  font-size: 20px;
+  border: none;
+}
+
+.add {
+  cursor: pointer;
+  color: #123132;
+}
+.add:active {
+  transform: scale(0.95);
+}
+.material-icons {
+  font-size: 36px !important;
 }
 .purchase_count {
   margin-bottom: 15px;
@@ -647,6 +666,23 @@ section.footer-section {
   .other_product_info {
     display: flex;
     align-items: center;
+    cursor: pointer;
+  }
+
+  .other_product_info:hover {
+    animation: myMove 2s infinite;
+  }
+
+  @keyframes myMove {
+    0% {
+      transform: scale(0.95, 0.95);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.95, 0.95);
+    }
   }
 
   .product_name1 {
@@ -733,19 +769,32 @@ section.footer-section {
     display: flex;
     border-bottom: 2px solid #707070;
   }
+
   .min {
-    width: 50px;
+    cursor: pointer;
+    color: #123132;
+  }
+  .min:active {
+    transform: scale(0.95);
   }
   .num {
     width: 200px;
     font-size: 40px;
     text-align: center;
+    border: none;
   }
 
   .add {
-    width: 50px;
     cursor: pointer;
+    color: #123132;
   }
+  .add:active {
+    transform: scale(0.95);
+  }
+  .material-icons {
+    font-size: 48px !important;
+  }
+
   /* .obj{
         margin: 0 20px;
         font-size: 33px;   
@@ -780,6 +829,8 @@ section.footer-section {
     background-color: #f0a520;
     /* transform: scale(0.5);   */
     transition: all 0.5s linear;
+    transform: scale(0.95);
+    transition: none;
   }
 
   .cart_button_PC {
@@ -799,6 +850,8 @@ section.footer-section {
     background-color: #f0a520;
     /* transform: scale(0.5);   */
     transition: all 0.5s linear;
+    transform: scale(0.95);
+    transition: none;
   }
 
   .collect_img {
