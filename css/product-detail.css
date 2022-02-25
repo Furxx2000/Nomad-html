@@ -209,7 +209,7 @@
 
 .cart_button {
   background-color: #123132;
-  width: 375px;
+  width: 100%;
   height: 75px;
   display: flex;
   justify-content: space-evenly;
@@ -248,7 +248,7 @@ div.cart_button .cart svg {
 
 .purchase {
   background-color: #f4f4f4;
-  width: 375px;
+  width: 100%;
   height: 443px;
   border-radius: 10% 10% 0 0;
   position: fixed;
@@ -535,7 +535,7 @@ section.footer-section {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .product_detail {
     padding: 0 10rem;
   }
